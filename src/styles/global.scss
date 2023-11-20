@@ -1,0 +1,20 @@
+@import "./utils/typography";
+@import "./utils/fonts";
+@import "./utils/mixins";
+@import "./utils/variables";
+
+body {
+  background-color: $black;
+  @extend %body-text;
+  -ms-overflow-style: none;
+  scrollbar-width: none;  
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.container {
+  max-width: 90vw;
+  margin: 0 auto;
+}
