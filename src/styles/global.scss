@@ -4,10 +4,11 @@
 @import "./utils/variables";
 
 body {
+  color: white;
   background-color: $black;
   @extend %body-text;
   -ms-overflow-style: none;
-  scrollbar-width: none;  
+  scrollbar-width: none;
 }
 
 ::-webkit-scrollbar {
