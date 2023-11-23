@@ -1,0 +1,65 @@
+@import "../../styles/global.scss";
+
+.hero {
+  position: relative;
+  
+  @include mq($tablet, '>') {
+    min-height: 700px;
+  }
+
+  &-front {
+    left: 50%;
+    position: absolute;
+    bottom: 50%;
+    transform: translate(-50%, 50%);
+    width: 58vw;
+
+    @include mq($laptop) {
+      width: 70vw;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    padding: 2.5vw;
+    height: 90vh;
+    // position: relative;
+
+    @include mq($tablet, '>') {
+      min-height: 700px;
+    }  
+  }
+
+  &__logo {
+    width: 14vw;
+
+    @include mq() {
+      width: 36vw;
+    }
+  }
+
+  &__top-text {
+    margin-top: 2vw;
+    width: 40vw;
+  }
+
+  .big-text {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 1vw;
+    width: 70%;
+
+    & span:last-child {
+      color: $black;
+      align-self: self-end;
+    }
+  }
+
+  &__under-title {
+    position: absolute;
+    bottom: 2vw;
+    width: 37vw
+  }
+}

@@ -1,0 +1,38 @@
+@import "../../styles/global.scss";
+
+.loader {
+  position: absolute;
+  z-index: 1000;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+
+  &__wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2vw;
+  }
+
+  &__progress-wrapper {
+    width: 40vw;
+    height: 4vw;
+    border: 0.2vw solid $white;
+    border-radius: 2vw;
+    overflow: hidden;
+  }
+  
+  &__progress {
+    height: 4vw;
+    width: 40vw;
+    transform: scaleX(0);
+    transform-origin: left center;
+    background-color: $red-main;
+    overflow: hidden;
+  }
+}

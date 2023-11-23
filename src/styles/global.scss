@@ -7,14 +7,19 @@ body {
   background-color: $black;
   @extend %body-text;
   -ms-overflow-style: none;
-  scrollbar-width: none;  
+  // scrollbar-width: none;
+  color: $white;
 }
 
 ::-webkit-scrollbar {
-  display: none;
+  // display: none;
 }
 
 .container {
   max-width: 90vw;
   margin: 0 auto;
+}
+
+[data-hidden] {
+  opacity: 0;
 }

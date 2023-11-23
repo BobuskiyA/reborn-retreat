@@ -12,15 +12,10 @@
 
 .big-text {
   font-family: Nastup, sans-serif;
-  text-align: center;
   font-size: 11vw;
   font-style: normal;
-  line-height: normal;
+  line-height: 90%;
   letter-spacing: normal;
-
-  @include mq() {
-    font-size: 6vw;
-  }
 }
 
 %h2 {
