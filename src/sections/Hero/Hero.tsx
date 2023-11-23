@@ -15,14 +15,13 @@ const heroAnim = (tl: gsap.core.Timeline) => {
   tl = gsap.timeline();
 
   tl
-      .to('.hero', {
-        opacity: 1,
-        delay: 5.6,
-        duration: 1
-      })
+    .to('.hero', {
+      opacity: 1,
+      delay: 5.6,
+      duration: 1
+    })
     .to(".hero-front", {
-      y: '46%',
-      x: '-6vw',
+      x: '20vw',
       scale: 0.8,
       delay: 1,
       duration: 0.7,
