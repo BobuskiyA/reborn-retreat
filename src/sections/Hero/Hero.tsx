@@ -15,24 +15,24 @@ const heroAnim = (tl: gsap.core.Timeline) => {
   tl = gsap.timeline();
 
   tl
-    //   .to('.hero', {
-    //     opacity: 1,
-    //     delay: 5.6,
-    //     duration: 1
-    //   })
+      .to('.hero', {
+        opacity: 1,
+        delay: 5.6,
+        duration: 1
+      })
     .to(".hero-front", {
       y: '46%',
-      x: '32%',
+      x: '-6vw',
       scale: 0.8,
       delay: 1,
       duration: 0.7,
       ease: "power2.inOut",
-    });
-  //   .to('.hero__content', {
-  //     opacity: 1,
-  //     duration: 0.4,
-  //     ease: 'power2.inOut',
-  //   })
+    })
+    .to('.hero__content', {
+      opacity: 1,
+      duration: 0.4,
+      ease: 'power2.inOut',
+    })
 
   return tl;
 };
@@ -48,13 +48,13 @@ const Hero = () => {
   return (
     <section
       className="hero"
-      // data-hidden
+      data-hidden
     >
       <FullWidthBg url={heroBack}>
         <img src={heroFront} alt="" className="hero-front" />
         <div
           className="hero__content"
-          // data-hidden
+          data-hidden
         >
           <Logo classImage="hero__logo" />
           <h2 className="bold hero__top-text">

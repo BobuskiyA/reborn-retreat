@@ -15,9 +15,9 @@ function App() {
 
   return (
     <main>
-      {/* {
+      {
         !loaderFinished && <Loader />
-      } */}
+      }
       <Hero />
     </main>
   );
