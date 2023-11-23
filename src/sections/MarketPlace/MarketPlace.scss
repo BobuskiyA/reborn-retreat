@@ -1,0 +1,56 @@
+@import "@/styles/global.scss";
+
+.marketplace {
+  &__body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    padding-top: 5vw;
+  }
+
+  &-text {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80vw;
+
+    margin-bottom: 3vw;
+  }
+
+  &__images {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 85vw;
+    justify-content: center;
+    gap: 20px;
+    margin: 0 auto;
+    margin-bottom: 2vw;
+    @include mq() {
+    }
+  }
+  &__image {
+    & img {
+      height: 26vw;
+      width: 16vw;
+    }
+  }
+}
+
+.info-block {
+  display: flex;
+  justify-content: space-between;
+  max-width: 75vw;
+  margin: 0 auto;
+  padding-bottom: 15vw;
+}
+
+.side {
+  width: 48%;
+
+  & li {
+    border: 1px solid;
+    padding: 1vw 0 1vw 2vw;
+  }
+}

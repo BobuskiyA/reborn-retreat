@@ -29,3 +29,4 @@ const Root = () => (
 )
 
 export default App;
+
