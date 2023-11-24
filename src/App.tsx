@@ -6,6 +6,9 @@ import gsap from 'gsap'
 import MarketPlace from './sections/MarketPlace/MarketPlace';
 import Overview from './sections/Overview/Overview';
 import Features from './sections/Features/Features';
+import FullWidthBg from './components/FullWidthBg/FullWidthBg';
+
+import bottomBg from './images/bottom-bg.jpg';
 
 function App() {
   const [loaderFinished, setLoaderFinished] = useState(false);
@@ -37,7 +40,12 @@ const Root = () => (
   <>
     <Overview />
     <MarketPlace />
-    <Features />
+
+    <FullWidthBg
+      url={bottomBg}
+    >
+      <Features />
+    </FullWidthBg>
   </>
 )
 
