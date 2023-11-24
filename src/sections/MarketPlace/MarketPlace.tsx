@@ -13,6 +13,7 @@ import davil7 from "@/images/marketplace/devil7.jpg";
 import davil8 from "@/images/marketplace/devil8.jpg";
 
 import MarketPlaceBack from "@/images/marketplace/marketplace.png";
+import { TextSplit } from "@/components/TextSplit/TextSplit";
 
 const MarketPlace = () => {
   const photoPaths = [
@@ -39,7 +40,10 @@ const MarketPlace = () => {
 
   return (
     <section className="marketplace">
-      <FullWidthBg url={MarketPlaceBack}>
+      <FullWidthBg
+        url={MarketPlaceBack}
+        customClass="marketplace__background"  
+      >
         <div className="marketplace__body">
           <h1>Web3 Marketplace</h1>
           <p className="marketplace-text">
@@ -60,14 +64,18 @@ const MarketPlace = () => {
           <div className="side">
             <ul>
               {leftSide.map((item, index) => (
-                <li key={index}>{item}</li>
+                <li key={index}>
+                  <TextSplit phrase={item}/>
+                </li>
               ))}
             </ul>
           </div>
           <div className="side">
             <ul>
               {rightSide.map((item, index) => (
-                <li key={index}>{item}</li>
+                <li key={index}>
+                  <TextSplit phrase={item}/>
+                </li>
               ))}
             </ul>
           </div>

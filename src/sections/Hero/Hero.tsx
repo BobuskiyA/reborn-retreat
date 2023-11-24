@@ -1,4 +1,4 @@
-import { FC, useRef, useEffect } from "react";
+import { FC, useRef, useEffect, Dispatch, SetStateAction } from "react";
 import gsap from "gsap";
 import FullWidthBg from "../../components/FullWidthBg/FullWidthBg";
 import "./Hero.scss";
@@ -8,22 +8,24 @@ import heroBack from "@/images/hero/hero_background.png";
 import { Logo } from "@/components/Logo/Logo";
 
 type Props = {
-  loaderFinished: boolean;
+  showPage: (value: boolean) => void
 };
 
-const heroAnim = (tl: gsap.core.Timeline) => {
-  tl = gsap.timeline();
+const heroAnim = (tl: gsap.core.Timeline, onComplete: () => void) => {
+  tl = gsap.timeline({
+    onComplete: onComplete
+  });
 
   tl
     .to('.hero', {
       opacity: 1,
-      delay: 5.6,
+      // delay: 5.6,
       duration: 1
     })
     .to(".hero-front", {
       x: '20vw',
       scale: 0.8,
-      delay: 1,
+      // delay: 1,
       duration: 0.7,
       ease: "power2.inOut",
     })
@@ -36,12 +38,12 @@ const heroAnim = (tl: gsap.core.Timeline) => {
   return tl;
 };
 
-const Hero = () => {
+const Hero: FC<Props> = ({showPage}) => {
 
   useEffect(() => {
     const tl = gsap.timeline();
 
-    tl.add(heroAnim(tl));
+    tl.add(heroAnim(tl, () => showPage(true)));
   });
 
   return (

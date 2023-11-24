@@ -1,0 +1,12 @@
+.text_split {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  
+  &__mask {
+    position: relative;
+    overflow: hidden;
+    display: inline-flex;
+    text-wrap: nowrap;
+  }
+}

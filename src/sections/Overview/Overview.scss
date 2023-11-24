@@ -1,0 +1,82 @@
+@import "../../styles/global.scss";
+
+.overview {
+  height: 70vw;
+  padding-top: 4vw;
+  position: relative;
+
+  @include mq($tablet, '>') {
+    min-height: 700px;
+  }
+
+  &__image {
+    top: -4vw;
+    height: 75vw;
+
+    @include mq($tablet, '>') {
+      min-height: 800px;
+    }  
+  }
+
+  &__text {
+    text-align: center;
+    padding: 2vw 15vw;
+    background-color: $black;
+  }
+
+  &__part {
+    position: absolute;
+    width: 12vw;
+
+    &-1 {
+      width: 13vw;
+      top: -12vw;
+      left: 7vw;
+    }
+    
+    &-2 {
+      top: -10vw;
+      right: -2vw;
+    }
+   
+    &-3 {
+      top: 35vw;
+      left: 7vw;
+    }
+    
+    &-4 {
+      top: 46vw;
+      right: 2vw;
+    }
+  }
+
+  .portal {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    @include mq() {
+      top: 70%;
+    }
+
+    &__main {
+      width: 50vw;
+    }
+
+    &-peace {
+      position: absolute;
+        width: 5vw;
+
+      &-1 {
+        left: 11vw;
+        top: 1vw;
+      }
+      
+      &-2 {
+        right: 13vw;
+        top: -4vw;
+      }
+    }
+  }
+}
