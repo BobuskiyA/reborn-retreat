@@ -19,13 +19,13 @@ const heroAnim = (tl: gsap.core.Timeline, onComplete: () => void) => {
   tl
     .to('.hero', {
       opacity: 1,
-      // delay: 5.6,
+      delay: 5.6,
       duration: 1
     })
     .to(".hero-front", {
       x: '20vw',
       scale: 0.8,
-      // delay: 1,
+      delay: 1,
       duration: 0.7,
       ease: "power2.inOut",
     })

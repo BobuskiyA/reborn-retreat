@@ -1,0 +1,34 @@
+[
+  {
+    "feature": "Engineering",
+    "text": "Determines how much $SCRAP is added to your Stash every few seconds."
+  },
+  {
+    "feature": "Damage",
+    "text": "Determines how much $SCRAP is added to your Stash every few seconds."
+  },
+  {
+    "feature": "Defense",
+    "text": "Determines how much $SCRAP is added to your Stash every few seconds."
+  },
+  {
+    "feature": "Statsh Size",
+    "text": "Determines how much $SCRAP is added to your Stash every few seconds."
+  },
+  {
+    "feature": "Favor",
+    "text": "Determines how much $SCRAP is added to your Stash every few seconds."
+  },
+  {
+    "feature": "Luck",
+    "text": "Determines how much $SCRAP is added to your Stash every few seconds."
+  },
+  {
+    "feature": "Dodge",
+    "text": "Determines how much $SCRAP is added to your Stash every few seconds."
+  },
+  {
+    "feature": "Critical Hit",
+    "text": "Determines how much $SCRAP is added to your Stash every few seconds."
+  }
+]

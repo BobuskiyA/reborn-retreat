@@ -1,0 +1,53 @@
+@import "../../styles/global.scss";
+
+.features {
+  position: relative;
+  display: flex;
+  padding-bottom: 10vw;
+  gap: 1vw;
+
+  &__wrapper {
+    width: 55%;
+  }
+
+  &__list {
+    &-item {
+      display: flex;
+      flex-direction: column;
+      border: 1px solid $grey-main;
+      background-color: $black-transparent;
+      font-family: Chakra Petch, sans-serif;
+    }
+
+    &-title {
+      padding: 2vw;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        background-color: $red-main;
+      }
+
+      &--active {
+        background-color: $red-main;
+        border-bottom: 1px solid $grey-main;
+      }
+    }
+
+    &-text {
+      color: $grey-main;
+    }
+  }
+
+  &__download {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 4vw;
+    width: 43%;
+  
+    &_image {
+      width: 100%;
+    }
+  }
+}

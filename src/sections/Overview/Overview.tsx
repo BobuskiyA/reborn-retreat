@@ -89,12 +89,14 @@ const Overview = () => {
     });
 
     overviewPartsWrapper.current.forEach(targetWrapper => {
-      document.addEventListener("mousemove", (e) => {
-        const animationFactor = 0.01;
-        const deltaX = (e.clientX - window.innerWidth / 0.2) * animationFactor;
-        const deltaY = (e.clientY - window.innerHeight / 0.2) * animationFactor;
-        gsap.to(targetWrapper, { x: deltaX, y: deltaY, duration: 0.75 });
-      });
+      if (window.innerWidth > 1023) {
+        document.addEventListener("mousemove", (e) => {
+          const animationFactor = 0.01;
+          const deltaX = (e.clientX - window.innerWidth / 0.2) * animationFactor;
+          const deltaY = (e.clientY - window.innerHeight / 0.2) * animationFactor;
+          gsap.to(targetWrapper, { x: deltaX, y: deltaY, duration: 0.75 });
+        });
+      }
     })
   }, []);
   

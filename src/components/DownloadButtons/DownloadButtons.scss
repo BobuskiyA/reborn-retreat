@@ -1,0 +1,27 @@
+@import "../../styles/global.scss";
+
+.download-buttons {
+  display: flex;
+  justify-content: space-between;
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5vw;
+    padding: 1vw 4.5vw;
+    border: 0.2vw solid $red-main;
+    border-radius: 5%;
+    text-transform: none;
+    transition: all 0.3s ease-out;
+
+    & img {
+      object-fit: contain;
+      height: 80%;
+    }
+
+    &:hover {
+      background-color: $red-main;
+    }
+  }
+}
