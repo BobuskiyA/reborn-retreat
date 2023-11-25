@@ -1,10 +1,11 @@
 @import "../../styles/global.scss";
 
 .characters {
-  position: relative;
   display: flex;
   flex-direction: column;
+  position: relative;
   padding-bottom: 10vw;
+
   &__body {
     display: flex;
     gap: 2vw;
@@ -43,7 +44,8 @@
   &__image {
     display: flex;
     flex-direction: column;
-    
+    gap: 4vw;
+
     width: 43%;
   }
 }
