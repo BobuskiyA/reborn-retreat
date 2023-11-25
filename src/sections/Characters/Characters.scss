@@ -17,40 +17,33 @@
 
     &_images {
       display: flex;
+      justify-content: space-between;
       margin-top: 2vw;
-      gap: 4vw;
 
       & img {
         width: 5vw;
-        height: 8vw;
       }
     }
   }
 
   &__title {
-    font-size: 1.2vw;
-
-    padding: 1vw;
-    border-radius: 3px 3px 0px 0px;
-    background: var(--color-main-red-1, #d50025);
+    padding: 1vw 2vw;
+    background-color: $red-main;
   }
 
   &__discription {
-    padding: 1vw 0 1.5vw 3vw;
+    padding: 2vw;
     border: 1px solid $grey-main;
     border-width: 0 1px 1px 1px;
 
     & p {
-      font-size: 1vw;
+      margin-bottom: 1vw;
     }
   }
   &__image {
     display: flex;
     flex-direction: column;
+    
     width: 43%;
-    gap: 2vw;
-  }
-  &__photo {
-    width: 100%;
   }
 }

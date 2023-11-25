@@ -41,7 +41,7 @@ const Characters = () => {
             </p>
             <div className="characters__content_images">
               {photoPaths.map((photoPath, index) => (
-                <div key={index} className="marketplace__image">
+                <div key={index}>
                   <img src={photoPath} alt={`Photo ${index + 1}`} />
                 </div>
               ))}

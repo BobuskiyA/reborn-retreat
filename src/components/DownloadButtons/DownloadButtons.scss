@@ -3,7 +3,12 @@
 .download-buttons {
   display: flex;
   justify-content: space-between;
-
+  
+  @include mq() {
+     flex-direction: column;
+     gap: 2vw;
+  }
+  
   &__link {
     display: flex;
     align-items: center;
@@ -14,14 +19,24 @@
     border-radius: 5%;
     text-transform: none;
     transition: all 0.3s ease-out;
-
+    
+    @include mq() {
+      padding: 0.5vw 2vw;
+      gap: 1.5vw;
+    }
+    
     & img {
       object-fit: contain;
       height: 80%;
+      
+      @include mq() {
+        height: 50%;
+      }
     }
 
     &:hover {
       background-color: $red-main;
     }
+
   }
 }
