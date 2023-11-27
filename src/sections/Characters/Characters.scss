@@ -9,12 +9,21 @@
   &__body {
     display: flex;
     gap: 2vw;
+    
+    @include mq() {
+      flex-direction: column;
+    }
   }
+
   &__content {
     display: flex;
     flex-direction: column;
 
     width: 55%;
+    
+    @include mq() {
+      width: 100%;
+    }
 
     &_images {
       display: flex;
@@ -23,6 +32,10 @@
 
       & img {
         width: 5vw;
+
+        @include mq() {
+          width: 12vw;
+        }
       }
     }
   }
@@ -47,5 +60,9 @@
     gap: 4vw;
 
     width: 43%;
+
+    @include mq() {
+      width: auto;
+    }
   }
 }

@@ -11,26 +11,30 @@ import { DownloadButtons } from "@/components/DownloadButtons/DownloadButtons";
 
 
 const featuresAnim = {
-  closed: {
-    height: 0,
-    padding: 0,
-    transition: {
-      duration: 0.2,
-      ease: [0.215, 0.61, 0.355, 1],
+    closed: {
+      height: 0,
+      opacity: 0,
+      padding: 0,
+      transition: {
+        duration: 0.2,
+        ease: [0.215, 0.61, 0.355, 1],
+      },
+      transitionEnd: {
+        display: "none",
+      },
     },
-    transitionEnd: {
-      display: "none",
+    open: {
+      height: "max-content",
+      padding: '2vw',
+      display: "flex",
+      opacity: 1,
+      transition: {
+        duration: 0.2,
+        ease: [0.215, 0.61, 0.355, 1],
+        opacity: { delay: 0.23 },
+        padding: { delay: 0.1 },
+      },
     },
-  },
-  open: {
-    height: "max-content",
-    padding: '2vw',
-    display: "flex",
-    transition: {
-      duration: 0.2,
-      ease: [0.215, 0.61, 0.355, 1],
-    },
-  },
 };
 
 const Features = () => {

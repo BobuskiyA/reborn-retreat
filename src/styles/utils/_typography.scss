@@ -8,6 +8,10 @@
   text-transform: uppercase;
   line-height: 142%;
   letter-spacing: normal;
+
+  @include mq() {
+    font-size: 5vw;
+  }
 }
 
 .big-text {
@@ -16,6 +20,10 @@
   font-style: normal;
   line-height: 90%;
   letter-spacing: normal;
+
+  @include mq() {
+    font-size: 16vw;
+  }
 }
 
 %h2 {
@@ -40,7 +48,7 @@
   letter-spacing: 0.07vw;
 
   @include mq() {
-    font-size: 2vw;
+    font-size: 3vw;
   }
 }
 
@@ -52,6 +60,10 @@
   line-height: 124.235%;
   text-transform: uppercase;
   letter-spacing: normal;
+
+  @include mq() {
+    font-size: 3vw;
+  }
 }
 
 .small-text {
@@ -63,18 +75,20 @@
   letter-spacing: 0.07vw;
 
   @include mq() {
-    font-size: 2.5vw;
+    font-size: 3vw;
   }
 }
 
 footer {
-  & a {
-    font-family: Consolas, sans-serif;
-    font-size: 1.35vw;;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 185.856%;
-    letter-spacing: 0.07vw;
+  font-family: Consolas, sans-serif;
+  font-size: 1.35vw;;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 185.856%;
+  letter-spacing: 0.07vw;
+
+  @include mq() {
+    font-size: 2.5vw;
   }
 }
 

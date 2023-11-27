@@ -38,14 +38,14 @@ const Overview = () => {
         trigger: '.overview',
         start: 'top bottom',
         end: 'bottom top',
-        scrub: 0.2,
+        scrub: true,
       }
     });
 
     const moveX = (target: HTMLImageElement, direction: number) => {
       gsap.to(target, randomTime(), {
         xPercent: randomX(direction),
-        ease: Sine.easeInOut,
+        ease: 'back.inOut',
         onComplete: moveX,
         onCompleteParams: [target, direction * -1],
       });
@@ -54,7 +54,7 @@ const Overview = () => {
     const moveY = (target: HTMLImageElement, direction: number) => {
       gsap.to(target, randomTime(), {
         yPercent: randomY(direction),
-        ease: Sine.easeInOut,
+        ease: 'back.inOut',
         onComplete: moveY,
         onCompleteParams: [target, direction * -1],
       });
@@ -81,23 +81,13 @@ const Overview = () => {
       rotate(part, 1);
     });
 
-    overviewParts.current.forEach((targetPeace, index) => {
-      tl.to(targetPeace, {
-        yPercent: gsap.utils.random(-200, 0),
-        ease: 'none',
-      }, 0);
-    });
-
-    overviewPartsWrapper.current.forEach(targetWrapper => {
-      if (window.innerWidth > 1023) {
-        document.addEventListener("mousemove", (e) => {
-          const animationFactor = 0.01;
-          const deltaX = (e.clientX - window.innerWidth / 0.2) * animationFactor;
-          const deltaY = (e.clientY - window.innerHeight / 0.2) * animationFactor;
-          gsap.to(targetWrapper, { x: deltaX, y: deltaY, duration: 0.75 });
-        });
-      }
-    })
+    
+    // overviewParts.current.forEach((targetPeace, index) => {
+    //   tl.to(targetPeace, {
+    //     yPercent: gsap.utils.random(-200, -50),
+    //     ease: 'none',
+    //   }, 0);
+    // });
   }, []);
   
   return (

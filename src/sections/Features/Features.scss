@@ -3,12 +3,23 @@
 .features {
   position: relative;
   display: flex;
-  padding-bottom: 10vw;
+  padding-bottom: 20vw;
   gap: 1vw;
+
+  @include mq() {
+    flex-direction: column-reverse;
+    gap: 6vw;
+    padding-bottom: 30vw;
+  }
 
   &__wrapper {
     width: 55%;
-    min-height: 80vw;
+    min-height: 68vw;
+
+    @include mq() {
+      width: 100%;
+      min-height: 100vw;
+    }
   }
 
   &__list {
@@ -46,6 +57,10 @@
     gap: 4vw;
     margin-top: 4vw;
     width: 43%;
+
+    @include mq() {
+      width: 100%;
+    }
   
     &_image {
       width: 100%;

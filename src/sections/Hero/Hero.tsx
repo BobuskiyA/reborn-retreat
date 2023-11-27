@@ -8,50 +8,58 @@ import heroBack from "@/images/hero/hero_background.png";
 import { Logo } from "@/components/Logo/Logo";
 
 type Props = {
+  loaderFinished: boolean
   showPage: (value: boolean) => void
 };
 
-const heroAnim = (tl: gsap.core.Timeline, onComplete: () => void) => {
+const heroAnim = (
+  tl: gsap.core.Timeline, 
+  onComplete: () => void
+) => {
   tl = gsap.timeline({
     onComplete: onComplete
   });
 
-  tl
-    .to('.hero', {
-      opacity: 1,
-      delay: 5.6,
-      duration: 1
-    })
-    .to(".hero-front", {
-      x: '20vw',
-      scale: 0.8,
-      delay: 1,
-      duration: 0.7,
-      ease: "power2.inOut",
-    })
-    .to('.hero__content', {
-      opacity: 1,
-      duration: 0.4,
-      ease: 'power2.inOut',
-    })
+  
+    tl
+      .to('.hero', {
+        opacity: 1,
+        duration: 1
+      })
+      .to(".hero-front", {
+        x: '20vw',
+        scale: 0.8,
+        delay: 0.2,
+        duration: 0.7,
+        ease: "power2.inOut",
+      })
+      .to('.hero__content', {
+        opacity: 1,
+        duration: 0.2,
+        ease: 'power2.inOut',
+      })
+  
+
 
   return tl;
 };
 
-const Hero: FC<Props> = ({showPage}) => {
-
+const Hero: FC<Props> = ({ showPage, loaderFinished }) => {
+  
   useEffect(() => {
-    const tl = gsap.timeline();
+    if(loaderFinished) {
+      const tl = gsap.timeline();
 
-    tl.add(heroAnim(tl, () => showPage(true)));
-  });
+      tl.add(heroAnim(tl, () => showPage(true)));
+    }
+  }, [loaderFinished]);
 
   return (
     <section
       className="hero"
       data-hidden
     >
-      <FullWidthBg url={heroBack}>
+      <FullWidthBg url={heroBack} customClass="hero__background">
         <img src={heroFront} alt="" className="hero-front" />
         <div
           className="hero__content"
@@ -59,8 +67,8 @@ const Hero: FC<Props> = ({showPage}) => {
         >
           <Logo classImage="hero__logo" />
           <h2 className="bold hero__top-text">
-            The ultimate game that takes you to the fiery depths of the planet
-            of Hell!
+          The ultimate game that takes you to the fiery depths of the planet of Hell! 
+          Are you ready to build your infernal empire and ascend to the coveted status of the ruler of Hell?
           </h2>
           <h1 className="big-text">
             <span>crazy</span>
