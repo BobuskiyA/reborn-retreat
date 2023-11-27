@@ -7,12 +7,12 @@ body {
   background-color: $black;
   @extend %body-text;
   -ms-overflow-style: none;
-  // scrollbar-width: none;
+  scrollbar-width: none;
   color: $white;
 }
 
 ::-webkit-scrollbar {
-  // display: none;
+  display: none;
 }
 
 .container {
