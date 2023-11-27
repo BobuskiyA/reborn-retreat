@@ -20,7 +20,7 @@ const loaderAnim = (tl, onComplete) => {
   tl
   .to('.loader__progress', {
     scaleX: 1,
-    duration: 2,
+    duration: 5,
     delay: 0.5,
     ease: getRandomPower(),
   })
