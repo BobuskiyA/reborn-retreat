@@ -27,7 +27,7 @@ function App() {
 
   return (
     <main>
-      <Loader setLoaderFinished={setLoaderFinished} />
+      {!loaderFinished && <Loader setLoaderFinished={setLoaderFinished} />}
       <motion.div
         variants={hidenComponents}
         animate={loaderFinished ? 'open' : 'closed'}
@@ -35,7 +35,6 @@ function App() {
       >
         <Hero showPage={setIsShowPage} loaderFinished={loaderFinished}/>
       </motion.div>
-      {/* <div style={{ marginTop: "100vh" }}/> */}
       <motion.div
         variants={hidenComponents}
         animate={isShowPage ? 'open' : 'closed'}
