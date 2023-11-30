@@ -45,7 +45,7 @@ const Footer = () => {
             Privacy Policy
           </a>
         </p>
-        <p>Made by Bobuskiy Team</p>
+        <p>Made by @CRAZYHELL</p>
 
         <ul className="footer__socials">
           {socials.map((targetSocial, index) => (
