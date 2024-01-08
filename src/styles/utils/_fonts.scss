@@ -7,21 +7,24 @@
 
 @font-face {
   font-family: Montserrat;
-  src: url("../../../public/fonts/Montserrat/static/Montserrat-Regular.ttf") format("opentype");
+  src: url("../../../public/fonts/Montserrat/static/Montserrat-Regular.ttf")
+    format("opentype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: Montserrat;
-  src: url("../../../public/fonts/Montserrat/static/Montserrat-Bold.ttf") format("opentype");
+  src: url("../../../public/fonts/Montserrat/static/Montserrat-Bold.ttf")
+    format("opentype");
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: Chakra Petch;
-  src: url("../../../public/fonts/Chakra_Petch/ChakraPetch-Regular.ttf") format("opentype");
+  src: url("../../../public/fonts/Chakra_Petch/ChakraPetch-Regular.ttf")
+    format("opentype");
   font-weight: normal;
   font-style: normal;
 }
@@ -33,3 +36,18 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: Giselma;
+  src: url("../../../public/fonts/Giselma/giselmaregular-bwzm8.ttf")
+    format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Inconsolata;
+  src: url("../../../public/fonts/Inconsolata/Inconsolata-VariableFont_wdth\,wght.ttf")
+    format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
