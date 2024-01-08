@@ -37,13 +37,13 @@
       border: 0.5vw solid $white;
     }
   }
-  
+
   &__progress {
     height: 4vw;
     width: 40vw;
     transform: scaleX(0);
     transform-origin: left center;
-    background-color: $red-main;
+    background-color: #ffb087;
     overflow: hidden;
 
     @include mq() {

@@ -3,23 +3,18 @@ import { motion } from "framer-motion";
 import Loader from "./components/Loader/Loader";
 import Hero from "./sections/Hero/Hero";
 import "./styles/global.scss";
-import MarketPlace from "./sections/MarketPlace/MarketPlace";
-import Overview from "./sections/Overview/Overview";
-import Features from "./sections/Features/Features";
-import FullWidthBg from "./components/FullWidthBg/FullWidthBg";
 
-import bottomBg from "./images/bottom-bg.jpg";
-import Characters from "./sections/Characters/Characters";
 import Footer from "./sections/Footer/Footer";
+import Header from "./sections/Header/Header";
 
 const hidenComponents = {
   open: {
-    display: 'block'
+    display: "block",
   },
   close: {
-    display: 'none'
-  }
-}
+    display: "none",
+  },
+};
 
 function App() {
   const [loaderFinished, setLoaderFinished] = useState(false);
@@ -30,14 +25,15 @@ function App() {
       {!loaderFinished && <Loader setLoaderFinished={setLoaderFinished} />}
       <motion.div
         variants={hidenComponents}
-        animate={loaderFinished ? 'open' : 'closed'}
+        animate={loaderFinished ? "open" : "closed"}
         initial="close"
       >
-        <Hero showPage={setIsShowPage} loaderFinished={loaderFinished}/>
+        <Header />
+        <Hero showPage={setIsShowPage} loaderFinished={loaderFinished} />
       </motion.div>
       <motion.div
         variants={hidenComponents}
-        animate={isShowPage ? 'open' : 'closed'}
+        animate={isShowPage ? "open" : "closed"}
         initial="close"
       >
         <Root />
@@ -48,14 +44,7 @@ function App() {
 
 const Root = () => (
   <>
-    <Overview />
-    <MarketPlace />
-
-    <FullWidthBg url={bottomBg}>
-      <Characters />
-      <Features />
-      <Footer />
-    </FullWidthBg>
+    <Footer />
   </>
 );
 
