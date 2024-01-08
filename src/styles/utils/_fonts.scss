@@ -1,11 +1,4 @@
 @font-face {
-  font-family: Nastup;
-  src: url("../../../public/fonts/Nastup/Nastup-Basic.woff") format("opentype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
   font-family: Montserrat;
   src: url("../../../public/fonts/Montserrat/static/Montserrat-Regular.ttf")
     format("opentype");
@@ -15,24 +8,9 @@
 
 @font-face {
   font-family: Montserrat;
-  src: url("../../../public/fonts/Montserrat/static/Montserrat-Bold.ttf")
+  src: url("../../../public/fonts/Montserrat/static/Montserrat-SemiBold.ttf")
     format("opentype");
   font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: Chakra Petch;
-  src: url("../../../public/fonts/Chakra_Petch/ChakraPetch-Regular.ttf")
-    format("opentype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: Consolas;
-  src: url("../../../public/fonts/Consolas/CONSOLA.TTF") format("opentype");
-  font-weight: normal;
   font-style: normal;
 }
 

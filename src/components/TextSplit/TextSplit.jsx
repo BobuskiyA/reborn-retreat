@@ -7,7 +7,7 @@ const slideUp = {
   initial: {
     y: '100%',
   },
-  open: (i: number) => ({
+  open: (i) => ({
     y: '0%',
     transition: {
       duration: 0.8,
@@ -21,11 +21,7 @@ const slideUp = {
   },
 };
 
-type Props = {
-  phrase: string
-}
-
-export const TextSplit: FC<Props> = ({
+export const TextSplit = ({
   phrase,
 }) => {
   const description = useRef(null);

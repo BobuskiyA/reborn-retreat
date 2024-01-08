@@ -5,7 +5,7 @@ import { ScrollProvider } from './helpers/scrollProvider';
 import './styles/reset.scss'
 
 const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
+  document.getElementById('root')
 );
 root.render(
   <React.StrictMode>
