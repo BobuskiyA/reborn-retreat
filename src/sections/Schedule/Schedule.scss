@@ -1,0 +1,52 @@
+@import "/src/styles/global.scss";
+
+.schedule {
+  background-color: $c-purple;
+  border-bottom: 0.2vw solid $c-black;
+  padding: 4vw 6vw;
+  position: relative;
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 4vw;
+    position: relative;
+    z-index: 1;
+  }
+
+  &__item {
+    display: flex;
+    gap: 4vw;
+    
+    &:nth-of-type(2) {
+      flex-direction: row-reverse;
+    }
+  }
+
+  &__image {
+    width: 30vw;
+    height: 16vw;
+  }
+
+  &__flower {
+    position: absolute;
+    width: 28vw;
+    top: 2vw;
+    right: 0;
+    z-index: 0;
+  }
+  
+  &__rectangle {
+    position: absolute;
+    width: 29vw;
+    top: 48%;
+    left: 0;
+    z-index: 0;
+  }
+
+  &__dots {
+    position: absolute;
+    bottom: 26%;
+    right: 35%;
+  }
+}

@@ -1,4 +1,4 @@
-import { FC, ReactNode, useContext } from "react";
+import { useContext } from "react";
 import { ScrollContext } from '../../helpers/scrollContext';
 
 const AnchorLink = ({ toSection, children, ...rest }) => {
