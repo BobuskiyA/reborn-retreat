@@ -1,0 +1,80 @@
+@import "/src/styles/global.scss";
+
+.reborn {
+  position: relative; 
+
+  &__flower {
+    position: absolute;
+    width: 30vw;
+    top: -3vw;
+    z-index: 1;
+  }
+
+  &__bee {
+    position: absolute;
+    z-index: 2;
+    &-1 {
+      width: 5vw;
+      top: 34%;
+      left: 20%;
+    }
+    
+    &-2 {
+      width: 10vw;
+      top: 35%;
+      left: 35%;
+
+      transform: rotate(5deg);
+    }
+    
+    &-3 {
+      width: 6vw;
+      top: 2%;
+      left: 47%;
+
+      transform: rotate(-45deg);
+    }
+  }
+
+  &__wrapper {
+    background-color: $c-orange;
+    border-top: 0.2vw solid $c-black;
+    border-bottom: 0.2vw solid $c-black;
+    display: flex;
+    justify-content: space-between;
+    padding: 2vw 6vw;
+    gap: 5vw;
+
+    & > h2, p {
+      flex: 1;
+      position: relative;
+      z-index: 2;
+    }
+  }
+}
+
+.discount {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 0.2vw solid $c-black;
+  padding: 2vw;
+
+  &__button {
+    width: 14vw;
+    height: 3.5vw;
+    
+    background-color: $c-purple;
+  }
+
+  &__percent {
+    width: 4vw;
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 4vw;
+  }
+}

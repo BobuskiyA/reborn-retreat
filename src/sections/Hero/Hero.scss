@@ -1,0 +1,56 @@
+@import "/src/styles/global.scss";
+
+.hero {
+  position: relative;
+  height: max(80lvh, 500px);
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 8vw;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__image {
+    width: 34vw;
+    height: 24vw;
+    object-position: right;
+  }
+
+  &__button {
+    width: 14vw;
+    height: 3.5vw;
+    
+    background-color: $c-blue;
+  }
+  
+  &__line {
+    width: 100%;
+    height: 0.3vw;
+    background-color: $c-green;
+  }
+
+  &__decor {
+    position: absolute;
+
+    &-1 {
+      left: 15vw;
+      top: 2vw;
+      width: 14vw;
+    }
+
+    &-2 {
+      width: 12vw;
+      right: 4vw;
+      bottom: -8vw;
+    }
+  }
+}

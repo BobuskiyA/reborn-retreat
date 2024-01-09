@@ -10,7 +10,7 @@
     "@types/node": "^16.18.62",
     "@types/react": "^18.2.37",
     "@types/react-dom": "^18.2.15",
-    "classnames": "^2.3.2",
+    "classnames": "^2.5.1",
     "framer-motion": "^10.16.5",
     "gsap": "^3.12.2",
     "locomotive-scroll": "^5.0.0-beta.9",

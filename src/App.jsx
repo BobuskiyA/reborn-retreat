@@ -1,4 +1,7 @@
-import { Logo } from "./components/Logo/Logo";
+import { Header } from "./components/Header/Header";
+import { Discover } from "./sections/Discover/Discover";
+import { Hero } from "./sections/Hero/Hero";
+import { Reborn } from "./sections/Reborn/Reborn";
 import "./styles/global.scss";
 
 const hidenComponents = {
@@ -12,21 +15,12 @@ const hidenComponents = {
 
 function App() {
   return (
-    <main>
-      <Logo />
-      <h1 className="big-text">
-        Big text
-      </h1>
-      <h1>
-        h1 tag
-      </h1>
-      <h2>
-        h2 tag
-      </h2>
-      <p>
-        body text
-      </p>
-      <a href="/">Link</a>
+    <main style={{ marginBottom: '30vh' }}>
+      <Header />
+      
+      <Hero />
+      <Reborn />
+      <Discover />
     </main>
   );
 }

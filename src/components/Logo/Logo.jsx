@@ -1,3 +1,8 @@
-export const Logo = () => (
-  <img src="/images/logo.svg" alt="logo" className="logo" />
+export const Logo = ({ ...rest }) => (
+  <img
+    src="/images/logo.svg"
+    alt="logo"
+    style={{ objectFit: "contain" }}
+    {...rest}
+  />
 );
