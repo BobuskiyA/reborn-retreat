@@ -1,0 +1,50 @@
+@import "/src/styles/global.scss";
+
+.video {
+  background-color: $c-white;
+  border-bottom: 0.2vw solid $c-black;
+  padding: 4vw;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &-container {
+    position: relative;
+
+    img {
+      width: 20vw;
+      position: absolute;
+      right: -3vw;
+      top: 2vw;
+      object-fit: cover;
+      z-index: 1;
+    }
+  }
+
+  &-title {
+    margin-bottom: 2vw;
+  }
+  &-content {
+    video {
+      position: relative;
+      border-radius: 15px !important;
+      z-index: 2;
+    }
+  }
+  .play-button-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+
+    .play-button {
+      color: #ffffff;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+  }
+}

@@ -4,16 +4,16 @@
 @import "./utils/variables";
 
 body {
-  background-color: $black;
+  background-color: $c-pink-primary;
   @extend %body-text;
   -ms-overflow-style: none;
   scrollbar-width: none;
-  color: $white;
+  color: $c-black;
 }
 
-::-webkit-scrollbar {
-  display: none;
-}
+// ::-webkit-scrollbar {
+//   display: none;
+// }
 
 .container {
   max-width: 90vw;
