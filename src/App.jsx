@@ -1,4 +1,5 @@
 import { Header } from "./components/Header/Header";
+import { Dates } from "./sections/Dates/Dates";
 import { Discover } from "./sections/Discover/Discover";
 import { Hero } from "./sections/Hero/Hero";
 import { Preparation } from "./sections/Preparation/Preparation";
@@ -24,6 +25,7 @@ function App() {
       <Reborn />
       <Discover />
       <Schedule />
+      <Dates />
       <Preparation />
     </main>
   );
