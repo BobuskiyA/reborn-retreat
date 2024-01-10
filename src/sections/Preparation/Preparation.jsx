@@ -2,7 +2,6 @@ import React from "react";
 
 import "./Preparation.scss";
 import preparationList from "@/data/preparation.json";
-import { link } from "@/data/preparation.json";
 
 export const Preparation = () => {
   return (

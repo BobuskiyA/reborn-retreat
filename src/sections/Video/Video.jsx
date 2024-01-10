@@ -39,12 +39,9 @@ export const Video = () => {
           ref={playerRef}
           url={videoFileName}
           playing={playing}
-          onReady={() => console.log("onReady callback")}
-          onStart={() => console.log("onStart callback")}
           onPause={handlePause}
           onPlay={handlePlay}
           onEnded={handleVideoEnded}
-          onError={() => console.log("onError callback")}
           width="100%"
           height="100%"
         />

@@ -1,0 +1,87 @@
+@import "/src/styles/global.scss";
+
+.dates {
+  padding: 4vw 6vw;
+  border-bottom: 0.2vw solid $c-black;
+
+  .calendar {
+    width: 34vw;
+    padding: 2vw 2vw 4vw;
+    margin-top: 4vw;
+    text-align: center;
+    text-transform: uppercase;
+    border: 0.2vw solid $c-black;
+    border-radius: 1vw;
+
+    position: relative;
+
+    &__star {
+      position: absolute;
+      top: -3vw;
+      right: 1vw;
+      width: 8.5vw;
+    }
+    
+    &__weekdays, &__days {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      justify-items: center;
+      list-style-type: none;
+
+      li {
+          display:inline-block;
+          text-align: center;
+      }
+   }
+
+   &__weekdays {
+    border-bottom: 0.2vw solid $c-black;
+    padding: 1vw 0;
+   }
+
+   &__days {
+      grid-template-rows: repeat(5, 1fr);
+      row-gap: 1.2vw;
+
+      margin-top: 2vw;
+
+      
+   }
+
+   &__day {
+    background-color: $c-green;
+    width: 100%;
+    padding: 0.5vw 0;
+  
+    .type {
+      &-1 {
+        background-color: $c-purple;
+      }
+      &-2 {
+        background-color: $c-orange;
+      }
+      &-3 {
+        background-color: $c-blue;
+      }
+    }
+
+    &:nth-of-type(2),
+    &:nth-of-type(8),
+    &:nth-of-type(15),
+    &:nth-of-type(22),
+    &:nth-of-type(29) {
+      border-radius: 0.2vw 0;
+      padding-left: 0.5vw;
+    }
+    
+    &:nth-of-type(7),
+    &:nth-of-type(14),
+    &:nth-of-type(21),
+    &:nth-of-type(28),
+    &:nth-last-child(1) {
+      border-radius:  0 0.2vw 0.2vw 0;
+      padding-right: 0.5vw;
+    }
+   }
+  }
+}

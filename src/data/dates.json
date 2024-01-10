@@ -1,0 +1,26 @@
+[ 
+  {
+    "name": "Full Package",
+    "term": "30 days",
+    "entrance": "1st - 30th of April",
+    "welcomed": "31st of March"
+  },
+  {
+    "name": "First Entrance",
+    "term": "1st 10 days",
+    "entrance": "1st - 10th of April",
+    "welcomed": "31st of March"
+  },
+  {
+    "name": "Thai Massage",
+    "term": "2st 10 days",
+    "entrance": "10st - 20th of April",
+    "welcomed": "9th of April"
+  },
+  {
+    "name": "Last Entrance",
+    "term": "3rd 10 days",
+    "entrance": "20st - 30th of April",
+    "welcomed": "19th of April"
+  }
+]
