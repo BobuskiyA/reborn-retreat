@@ -9,7 +9,11 @@ import { Preparation } from "./sections/Preparation/Preparation";
 import { Reborn } from "./sections/Reborn/Reborn";
 import { Schedule } from "./sections/Schedule/Schedule";
 import { Video } from "./sections/Video/Video";
+import { Bring } from "./sections/Bring/Bring";
 import "./styles/global.scss";
+import { Rules } from "./sections/Rules/Rules";
+import { Questionnaire } from "./sections/Questionnaire/Questionnaire";
+import { Footer } from "./components/Footer/Footer";
 
 const hidenComponents = {
   open: {
@@ -37,6 +41,11 @@ function App() {
         <Dates />
         <Included />
         <Preparation />
+        <Bring />
+        <Rules />
+        <Questionnaire />
+
+        <Footer />
       </main>
     </>
   );

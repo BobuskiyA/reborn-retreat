@@ -1,0 +1,42 @@
+@import "/src/styles/global.scss";
+
+.questionnaire {
+  .questionnaire-container {
+    display: flex;
+    padding: 6vw;
+    gap: 2vw;
+
+    .questionnaire-block {
+      flex: 1;
+      padding: 30px;
+      border-radius: 8px;
+
+      &.health {
+        background-color: $c-orange;
+      }
+
+      &.laughter {
+        background-color: $c-green;
+      }
+
+      p {
+        margin-bottom: 20px;
+      }
+
+      .questionnaire__button {
+      }
+    }
+  }
+  &__button {
+    width: 14vw;
+    height: 3.5vw;
+
+    &.health {
+      background: #abd9dc;
+    }
+
+    &.laughter {
+      background: #c4c3e2;
+    }
+  }
+}

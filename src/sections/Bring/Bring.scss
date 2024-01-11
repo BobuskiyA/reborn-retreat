@@ -1,0 +1,110 @@
+@import "/src/styles/global.scss";
+
+.bring {
+  background-color: $c-yellow;
+  padding: 8vw 6vw;
+  border-bottom: 0.2vw solid #0f0f0f;
+  overflow: hidden;
+
+  &-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5vw;
+    position: relative;
+    .bring-decor {
+      position: absolute;
+      z-index: 1;
+
+      &-1 {
+        position: absolute;
+        top: -2vw;
+        right: 11vw;
+        z-index: 3;
+      }
+      &-2 {
+        position: absolute;
+        z-index: 1;
+
+        width: 36vw;
+        right: -20vw;
+        top: 2vw;
+        object-fit: cover;
+      }
+      &-3 {
+        position: absolute;
+        z-index: 1;
+        width: 10vw;
+        bottom: -78px;
+        left: 28vw;
+        object-fit: cover;
+      }
+    }
+  }
+
+  &-content {
+    width: 45%;
+  }
+
+  &-right {
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    gap: 1.5vw;
+  }
+
+  &-block {
+    display: flex;
+    height: 100%;
+
+    &.right {
+      display: block;
+    }
+  }
+
+  &-list {
+    list-style: inside;
+    margin: 0;
+    padding: 1vw;
+    border: 1px solid #000;
+    border-radius: 15px;
+    position: relative;
+    z-index: 2;
+
+    &.first {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      border-radius: 15px 15px 0 0;
+
+      h1 {
+        width: 100%;
+      }
+
+      .first-text {
+        display: flex;
+        gap: 2vw;
+      }
+
+      p {
+        width: calc(50% - 1vw);
+        box-sizing: border-box;
+      }
+    }
+
+    &.two {
+      border-radius: 0;
+    }
+
+    &.three {
+      display: flex;
+      justify-content: space-between;
+      border-radius: 0 0 15px 15px;
+
+      .three-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  }
+}
