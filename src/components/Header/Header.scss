@@ -1,14 +1,19 @@
 @import "/src/styles/global.scss";
 
 .header {
-  height: 5vw;
-  width: 100vw;
-  background-color: $c-purple;
-
   display: flex;
   align-items: center;
   flex-direction: row;
   justify-content: space-around;
+
+  height: 5vw;
+  background-color: $c-purple;
+
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 10;
 
   &__logo {
     width: 4vw;

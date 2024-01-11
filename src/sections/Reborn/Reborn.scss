@@ -1,18 +1,22 @@
 @import "/src/styles/global.scss";
 
 .reborn {
-  position: relative; 
+  position: relative;
+
+  margin-top: 1vw;
 
   &__flower {
     position: absolute;
-    width: 30vw;
-    top: -3vw;
+    width: 22vw;
+    top: -1vw;
+    left: 2vw;
     z-index: 1;
   }
 
   &__bee {
     position: absolute;
     z-index: 2;
+  
     &-1 {
       width: 5vw;
       top: 34%;
