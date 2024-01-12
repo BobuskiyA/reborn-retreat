@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import { Logo } from "../Logo/Logo";
 
 import LinkList from "../../data/links.json";
@@ -7,11 +8,15 @@ import "./Header.scss";
 import AnchorLink from "../AnchorLink/AnchorLink";
 import { Button } from "../Button/Button";
 import { Nav } from "../Nav/Nav";
+import { headerAnim } from "@/helpers/anim";
 
 export const Header = () => {
   return (
-    <header className="header"
-    // data-hidden
+    <motion.header
+      className="header"
+      variants={headerAnim}
+      initial="initial"
+      animate="enter"
     >
       <Logo className="header__logo" />
 
@@ -32,6 +37,6 @@ export const Header = () => {
       <div className="header__nav">
         <Nav />
       </div>
-    </header>
+    </motion.header>
   );
 };

@@ -59,3 +59,29 @@ export const Menu = {
     },
   },
 };
+
+export const scrollBarAnim = {
+  initial: {
+    right: '-4%',
+  },
+  enter: {
+    right: '0%',
+    transition: {
+      duration: 1,
+      ease: [0.76, 0, 0.24, 1],
+    }
+  }
+}
+export const headerAnim = {
+  initial: {
+    top: '-24%',
+  },
+  enter: {
+    top: '0%',
+    transition: {
+      duration: 1,
+      ease: [0.76, 0, 0.24, 1],
+    }
+  }
+}
+

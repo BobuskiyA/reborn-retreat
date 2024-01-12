@@ -14,7 +14,7 @@
     transform: translateY(-50%);
 
     @include mq() {
-      top: 64%;
+      top: 60%;
     }
   }
 
@@ -27,6 +27,22 @@
       gap: 1vw;
       text-align: center;
       align-items: center;
+    }
+
+    .char-mask {
+      position: relative;
+      overflow: hidden;
+      display: inline-flex;
+      gap: 0.5vw;
+
+      @include mq() {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .word {
+        text-wrap: nowrap;
+      }
     }
   }
 
@@ -83,7 +99,7 @@
       width: 14vw;
 
       @include mq() {
-        // top: 20vw;
+        // top: 8vw;
         // width: 60vw;
         // left: 4vw;
         display: none;

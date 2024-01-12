@@ -15,6 +15,7 @@ import { Rules } from "./sections/Rules/Rules";
 import { Questionnaire } from "./sections/Questionnaire/Questionnaire";
 import { Footer } from "./components/Footer/Footer";
 import { useState } from "react";
+import { AnimatePresence } from "framer-motion";
 
 const hidenComponents = {
   open: {
@@ -32,14 +33,17 @@ function App() {
   return (
     <>
       <BrowserView>
-        <ScrollBar />
+        <AnimatePresence mode="popLayout">
+          {isShowPage && <ScrollBar />}
+        </AnimatePresence>
       </BrowserView>
       <main>
-        <Header />
+        {isShowPage && <Header />}
 
         <Hero setLoaderFinished={setLoaderFinished} showPage={setIsShowPage} />
 
-        <Root />
+
+        {isShowPage && <Root />}
       </main>
     </>
   );
