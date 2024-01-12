@@ -1,7 +1,7 @@
 @import "/src/styles/global.scss";
 
 .bring {
-  background-color: $c-yellow;
+  background-color: $c-yellow-primary;
   padding: 8vw 6vw;
   border-bottom: 0.2vw solid #0f0f0f;
   overflow: hidden;
@@ -11,6 +11,11 @@
     justify-content: space-between;
     gap: 1.5vw;
     position: relative;
+
+    @include mq() {
+      flex-direction: column;
+    }
+
     .bring-decor {
       position: absolute;
       z-index: 1;
@@ -20,7 +25,12 @@
         top: -2vw;
         right: 11vw;
         z-index: 3;
+
+        @include mq() {
+          z-index: 0;
+        }
       }
+
       &-2 {
         position: absolute;
         z-index: 1;
@@ -29,6 +39,12 @@
         right: -20vw;
         top: 2vw;
         object-fit: cover;
+
+        @include mq() {
+          top: 60vw;
+          width: 64vw;
+          right: -42vw;
+        }
       }
       &-3 {
         position: absolute;
@@ -43,6 +59,10 @@
 
   &-content {
     width: 45%;
+
+    @include mq() {
+      width: 100%;
+    }
   }
 
   &-right {
@@ -50,6 +70,11 @@
     flex-direction: column;
     width: 55%;
     gap: 1.5vw;
+
+    @include mq() {
+      width: 100%;
+      margin-top: 8vw;
+    }
   }
 
   &-block {
@@ -64,11 +89,22 @@
   &-list {
     list-style: inside;
     margin: 0;
-    padding: 1vw;
+    padding: 2vw;
     border: 1px solid #000;
     border-radius: 15px;
     position: relative;
     z-index: 2;
+
+    @include mq() {
+      padding: 4vw;
+    }
+
+    h1 {
+      @include mq() {
+        text-align: center;
+        margin: 4vw 0;
+      }
+    }
 
     &.first {
       display: flex;
@@ -83,11 +119,17 @@
       .first-text {
         display: flex;
         gap: 2vw;
+
+        @include mq() {
+          flex-direction: column;
+        }
       }
 
       p {
-        width: calc(50% - 1vw);
-        box-sizing: border-box;
+        @include mq($tablet, ">") {
+          width: calc(50% - 1vw);
+          box-sizing: border-box;
+        }
       }
     }
 
@@ -96,9 +138,12 @@
     }
 
     &.three {
-      display: flex;
-      justify-content: space-between;
       border-radius: 0 0 15px 15px;
+
+      @include mq($tablet, ">") {
+        display: flex;
+        justify-content: space-between;
+      }
 
       .three-content {
         display: flex;

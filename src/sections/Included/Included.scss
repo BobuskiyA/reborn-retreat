@@ -5,7 +5,7 @@
   border-bottom: 0.2vw solid $c-black;
 
   @include mq() {
-    display: none;
+    // display: none;
   }
 
   &__head {
@@ -13,6 +13,10 @@
     grid-template-columns: 30% repeat(4, 15%);
     justify-content: space-between;
     height: 6vw;
+
+    @include mq() {
+      height: 20vw;
+    }
 
     &-item {
       height: 100%;
@@ -32,10 +36,18 @@
       font-weight: normal;
       font-size: 1.5vw;
       text-transform: uppercase;
+
+      @include mq() {
+        font-size: 3vw;
+      }
     }
 
     &-price {
       font-size: 1.7vw;
+
+      @include mq() {
+        font-size: 3vw;
+      }
     }
   }
 
@@ -77,6 +89,14 @@
       & > svg {
         width: 4vw;
       }
+    }
+  }
+
+  &__check {
+    width: 1.2vw;
+
+    @include mq() {
+      width: 4vw;
     }
   }
 

@@ -5,7 +5,7 @@ import { Button } from "@/components/Button/Button";
 
 export const Questionnaire = () => {
   return (
-    <section className="questionnaire">
+    <section className="questionnaire" id="questionnaire">
       <div className="questionnaire-container">
         <div className="questionnaire-block health">
           <h1>Health Questionnaire</h1>
@@ -25,7 +25,7 @@ export const Questionnaire = () => {
           <p>
             Reborn Retreat Thailand 2024 invites all participants and anyone
             else interested to question and honestly answer the Laughter
-            Questionnaire for self laughter awareness check.   
+            Questionnaire for self laughter awareness check.
           </p>
           <Button
             title="Start"

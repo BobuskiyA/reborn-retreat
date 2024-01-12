@@ -5,6 +5,7 @@ import { Menu } from "@/helpers/anim";
 import "./Body.scss";
 import linksList from "@/data/links.json"
 import AnchorLink from "@/components/AnchorLink/AnchorLink";
+import { Button } from "@/components/Button/Button";
 
 export const Body = ({ isActive, setIsActive }) => {
   return (
@@ -29,6 +30,7 @@ export const Body = ({ isActive, setIsActive }) => {
               {curLink.name}
             </AnchorLink>
           ))}
+          <Button title="Contact Us" to="/" customClass="nav__button" />
         </div>
       </div>
     </motion.div>

@@ -38,7 +38,7 @@ export const Footer = () => {
         </div>
         <div className="footer__right">
           <div className="footer-nav">
-            <div className="footer-text">Reborn Retreat</div>
+            <div className="footer-text-name">Reborn Retreat</div>
             <ul className="footer__list-links">
               {LinkList.map((currLink, index) => (
                 <li key={`header_link_${index}`}>
