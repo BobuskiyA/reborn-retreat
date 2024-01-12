@@ -2,7 +2,7 @@
 
 .hero {
   position: relative;
-  height: max(80lvh, 500px);
+  height: max(100lvh, 500px);
 
   &__wrapper {
     display: flex;
@@ -10,7 +10,8 @@
     position: absolute;
     left: 0;
     right: 0;
-    top: 8vw;
+    top: 50%;
+    transform: translateY(-50%);
   }
 
   &__text {
@@ -43,14 +44,14 @@
 
     &-1 {
       left: 15vw;
-      top: 2vw;
+      top: 6vw;
       width: 14vw;
     }
 
     &-2 {
       width: 12vw;
-      right: 4vw;
-      bottom: -8vw;
+      right: 8vw;
+      bottom: -10vw;
     }
   }
 }

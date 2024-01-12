@@ -1,24 +1,44 @@
 @import "/src/styles/global.scss";
 
 .header {
-  height: 5vw;
-  width: 100vw;
-  background-color: $c-purple;
-
   display: flex;
   align-items: center;
   flex-direction: row;
   justify-content: space-around;
 
+  height: 5vw;
+  background-color: $c-purple;
+
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 10;
+
+  @include mq() {
+    height: 18vw;
+  }
+
   &__logo {
     width: 4vw;
     height: 4vw;
+    position: relative;
+    z-index: 100;
+
+    @include mq() {
+      width: 13vw;
+      height: 13vw;
+    }
   }
 
   &__list-links {
     display: flex;
     align-items: center;
     gap: 0.8vw;
+
+    @include mq() {
+      display: none;
+    }
   }
 
   &__link {
@@ -30,5 +50,15 @@
     height: 60%;
     
     background-color: $c-orange;
+
+    @include mq() {
+      display: none !important;
+    }
+  }
+
+  &__nav {
+    @include mq($tablet + 1, '>') {
+      display: none;
+    }
   }
 }

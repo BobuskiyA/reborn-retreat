@@ -1,18 +1,22 @@
 @import "/src/styles/global.scss";
 
 .reborn {
-  position: relative; 
+  position: relative;
+
+  margin-top: 1vw;
 
   &__flower {
     position: absolute;
-    width: 30vw;
-    top: -3vw;
+    width: 22vw;
+    top: -1vw;
+    left: 2vw;
     z-index: 1;
   }
 
   &__bee {
     position: absolute;
     z-index: 2;
+  
     &-1 {
       width: 5vw;
       top: 34%;
@@ -45,6 +49,11 @@
     padding: 2vw 6vw;
     gap: 5vw;
 
+    @include mq() {
+      flex-direction: column;
+      padding: 8vw;
+    }
+
     & > h2, p {
       flex: 1;
       position: relative;
@@ -61,20 +70,51 @@
   border-bottom: 0.2vw solid $c-black;
   padding: 2vw;
 
+  @include mq() {
+    flex-direction: column;
+    padding: 14vw 8vw;
+  }
+
   &__button {
     width: 14vw;
     height: 3.5vw;
     
     background-color: $c-purple;
+
+    @include mq() {
+      width: 80vw;
+      height: 9vw;
+    }
   }
 
   &__percent {
     width: 4vw;
+
+    @include mq() {
+      position: absolute;
+
+      &:nth-of-type(1) {
+        top: 2vw;
+        right: 2vw;
+      }
+      
+      &:nth-of-type(2) {
+        bottom: 2vw;
+        left: 2vw;
+      }
+
+      width: 10vw;
+    }
   }
 
   &__wrapper {
     display: flex;
     align-items: center;
     gap: 4vw;
+
+    @include mq() {
+      flex-direction: column;
+      text-align: center;
+    }
   }
 }

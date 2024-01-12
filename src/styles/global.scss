@@ -11,9 +11,9 @@ body {
   color: $c-black;
 }
 
-// ::-webkit-scrollbar {
-//   display: none;
-// }
+::-webkit-scrollbar {
+  display: none;
+}
 
 .container {
   max-width: 90vw;

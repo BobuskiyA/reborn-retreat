@@ -5,9 +5,19 @@
   border-bottom: 0.2vw solid $c-black;
   background-color: $c-white;
 
+  @include mq() {
+    padding: 8vw 6vw;
+  }
+
   &__wrapper {
     display: flex;
     gap: 2vw;
+
+    @include mq() {
+      gap: 6vw;
+      flex-direction: column;
+      margin-top: 4vw;
+    }
   }
 
   &__list {
@@ -17,8 +27,24 @@
     gap: 1vw;
     padding: 1vw 0.5vw 1vw 2vw;
 
+    @include mq() {
+      gap: 6vw;
+
+      &:last-of-type {
+        .preparation__item:last-of-type {
+          border: none;
+        }
+      }
+    }
+
     &-image {
       width: 3vw;
+
+      @include mq() {
+        position: absolute;
+        transform: translateX(-120%);
+        align-self: flex-start;
+      }
     }
   }
   
@@ -30,8 +56,14 @@
 
     position: relative;
 
-    &:not(.preparation__item:last-child) {
+
+      &:not(.preparation__item:last-child) {
+        border-bottom: 0.2vw solid $c-black;
+      }
+
+    @include mq() {
       border-bottom: 0.2vw solid $c-black;
+      padding-bottom: 4vw;
     }
   }
 }

@@ -1,0 +1,40 @@
+{
+  "bring": {
+    "items": [
+      "A small food container for picnics.",
+      "Small backpack to carry water, food and small emergency kit for walks on the nature.",
+      "A ‘ridiculous’ outfit where nothing matches.",
+      "Make a list of your talents and choose one to share with the others on talent’s evening. From one to three minutes. We know you are awesome!",
+      "Swimming suit. For the pool and ocean. Swimming shoes if wished.",
+      "Small nails care kit (nail cutter, nail file and cuticle nipper).",
+      "Socks, underwear, hair brush, cotton for neck and ears cleaning.",
+      "Lightweight and color baggy comfortable pants.",
+      "Lightweight and color long sleeves for sun protection and mosquitoes protection.",
+      "Shoes: Hiking sandals and comfortable flip flops",
+      "Yoga mat.",
+      "Comfortable clothes for stretching"
+    ]
+  },
+  "enteringThailand": {
+    "title": "Entering Thailand",
+    "content": [
+      "Firstly make sure your passport is valid for more than 6 months. Most passports get a 30 day visa on arrival without payment. Enquire via your home Embassy or online re up-to-date information.Additionally if anyone would like to stay longer I offer to take you to the immigration office where you can pay 1900 baht.",
+      "Please find health insurance for the trip since this program is not taking responsibility for the participant’s health state. It is important for us that everyone stays healthy and we hope there are no accidents. In case of an accident it is more economical and efficient to have health insurance."
+    ]
+  },
+  "arrivingToPhangan": {
+    "title": "ARRIVING TO PHANGAN",
+    "content": [
+      "This magical island can only be reached by water. No airports. A taxi will be waiting at the pier to bring the participants to Phangan Utopia Resort."
+    ]
+  },
+  "weatherInApril": {
+    "title": "WHEATHER IN APRIL",
+    "content": [
+      {
+        "label": "Average temperature",
+        "value": "27.5 C - 29.2 C"
+      }
+    ]
+  }
+}

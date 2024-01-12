@@ -1,0 +1,50 @@
+@import "/src/styles/global.scss";
+
+.rules {
+  background-color: $c-purple;
+  border-bottom: 0.2vw solid $c-black;
+  padding: 5vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+    margin: 3vw 0;
+  }
+
+  &__item {
+    position: relative;
+    text-align: center;
+    width: 22%;
+    height: 18vw;
+    margin: 1%;
+    background: center no-repeat;
+    background-size: contain;
+  }
+
+  &__image {
+    width: 100%;
+    height: auto;
+  }
+
+  &-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+    text-align: center;
+    height: 100%;
+
+    padding: 0 3vw;
+  }
+
+  &-description {
+    width: 65%;
+  }
+}
