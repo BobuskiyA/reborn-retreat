@@ -19,6 +19,13 @@
     height: 18vw;
   }
 
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1.8vw;
+    height: 100%;
+  }
+
   &__logo {
     width: 4vw;
     height: 4vw;
@@ -34,7 +41,7 @@
   &__list-links {
     display: flex;
     align-items: center;
-    gap: 0.8vw;
+    gap: 1.2vw;
 
     @include mq() {
       display: none;
