@@ -7,11 +7,13 @@ export const Rules = () => {
     <section className="rules">
       <div className="rules-container">
         <h1>Rules</h1>
-        <div className="rules-text">“To keep a pure and safe environment”</div>
+        <h2>
+          “To keep a pure and safe environment”
+        </h2>
         <ul className="rules__list">
           {rules.map((currD, index) => (
-            <li key={`rules-${index}`} className="rules__item">
-              <div className="rules-content" style={{ backgroundImage: `url(${currD.image})` }}>
+            <li key={`rules-${index}`} className="rules__item" style={{ backgroundImage: `url(${currD.image})` }}>
+              <div className="rules-content">
                 <h1>{currD.title}</h1>
                 <p>{currD.description}</p>
               </div>

@@ -55,4 +55,10 @@
       display: none !important;
     }
   }
+
+  &__nav {
+    @include mq($tablet + 1, '>') {
+      display: none;
+    }
+  }
 }

@@ -25,7 +25,9 @@ export const Header = () => {
 
       <Button title="Contact Us" to="/" customClass="header__button" />
 
-      <Nav />
+      <div className="header__nav">
+        <Nav />
+      </div>
     </header>
   );
 };
