@@ -4,6 +4,10 @@
   padding: 2vw 4vw 6vw;
   border-bottom: 0.2vw solid $c-black;
 
+  @include mq() {
+    display: none;
+  }
+
   &__head {
     display: grid;
     grid-template-columns: 30% repeat(4, 15%);

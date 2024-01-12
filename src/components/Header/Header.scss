@@ -15,15 +15,30 @@
   right: 0;
   z-index: 10;
 
+  @include mq() {
+    height: 18vw;
+  }
+
   &__logo {
     width: 4vw;
     height: 4vw;
+    position: relative;
+    z-index: 100;
+
+    @include mq() {
+      width: 13vw;
+      height: 13vw;
+    }
   }
 
   &__list-links {
     display: flex;
     align-items: center;
     gap: 0.8vw;
+
+    @include mq() {
+      display: none;
+    }
   }
 
   &__link {
@@ -35,5 +50,9 @@
     height: 60%;
     
     background-color: $c-orange;
+
+    @include mq() {
+      display: none !important;
+    }
   }
 }

@@ -30,7 +30,7 @@ function App() {
       <BrowserView>
         <ScrollBar />
       </BrowserView>
-      <main style={{ marginBottom: "30vh" }}>
+      <main>
         <Header />
 
         <Hero />

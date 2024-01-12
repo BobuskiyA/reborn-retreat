@@ -35,3 +35,27 @@ export const calendarAnim = {
     },
   },
 };
+
+export const Menu = {
+  menuOpen: {
+    initial: {
+      height: 0,
+      left: 0,
+      right: 0,
+    },
+    enter: {
+      height: "100lvh",
+      transition: {
+        duration: 1,
+        ease: [0.76, 0, 0.24, 1],
+      },
+    },
+    exit: {
+      height: 0,
+      transition: {
+        duration: 1,
+        ease: [0.76, 0, 0.24, 1],
+      },
+    },
+  },
+};

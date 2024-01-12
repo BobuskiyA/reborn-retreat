@@ -8,9 +8,9 @@
   line-height: 142%;
   letter-spacing: normal;
 
-  // @include mq() {
-  //   font-size: 5vw;
-  // }
+  @include mq() {
+    font-size: 6.5vw;
+  }
 }
 
 .big-text {
@@ -21,9 +21,9 @@
   text-transform: uppercase;
   letter-spacing: normal;
 
-  // @include mq() {
-  //   font-size: 16vw;
-  // }
+  @include mq() {
+    font-size: 16vw;
+  }
 }
 
 %h2 {
@@ -34,9 +34,9 @@
   line-height: normal;
   letter-spacing: normal;
 
-  // @include mq() {
-  //   font-size: 4vw;
-  // }
+  @include mq() {
+    font-size: 7vw;
+  }
 }
 
 %body-text {
@@ -47,18 +47,15 @@
   line-height: 140%;
   letter-spacing: 0.07vw;
 
-  // @include mq() {
-  //   font-size: 3vw;
-  // }
+  @include mq() {
+    font-size: 4vw;
+  }
 }
 
 %link {
   @extend %body-text;
   font-weight: bold;
 
-  // @include mq() {
-  //   font-size: 3vw;
-  // }
 }
 
 .bold {

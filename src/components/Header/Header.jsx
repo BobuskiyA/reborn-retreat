@@ -6,6 +6,7 @@ import LinkList from "../../data/links.json";
 import "./Header.scss";
 import AnchorLink from "../AnchorLink/AnchorLink";
 import { Button } from "../Button/Button";
+import { Nav } from "../Nav/Nav";
 
 export const Header = () => {
   return (
@@ -23,6 +24,8 @@ export const Header = () => {
       </ul>
 
       <Button title="Contact Us" to="/" customClass="header__button" />
+
+      <Nav />
     </header>
   );
 };

@@ -5,6 +5,10 @@
   border-bottom: 0.2vw solid $c-black;
   padding: 5vw;
 
+  @include mq() {
+    padding: 8vw;
+  }
+
   &__list {
     display: grid;
     align-items: stretch;
@@ -13,6 +17,12 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 4vw 12vw;
     margin-top: 2vw;
+
+    @include mq() {
+      display: flex;
+      flex-direction: column;
+      gap: 6vw;
+    }
   }
 
   &__item {
@@ -24,14 +34,26 @@
 
     height: 120%;
 
+    @include mq() {
+      gap: 4vw;
+    }
+
     &:nth-of-type(2) {
       .discover__image {
         width: 6vw;
+
+        @include mq() {
+          width: 14%;
+        }
       }
     }
   }
 
   &__image {
     width: 8vw;
+
+    @include mq() {
+      width: 16%;
+    }
   }
 }

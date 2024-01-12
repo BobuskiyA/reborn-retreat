@@ -11,12 +11,7 @@ export const Rules = () => {
         <ul className="rules__list">
           {rules.map((currD, index) => (
             <li key={`rules-${index}`} className="rules__item">
-              <img
-                src={currD.image}
-                alt={`rules-${index}`}
-                className="rules__image"
-              />
-              <div className="rules-content">
+              <div className="rules-content" style={{ backgroundImage: `url(${currD.image})` }}>
                 <h1>{currD.title}</h1>
                 <p>{currD.description}</p>
               </div>
