@@ -42,7 +42,6 @@ export const Menu = {
       height: 0,
       left: 0,
       right: 0,
-      top: '17vw'
     },
     enter: {
       height: "100lvh",

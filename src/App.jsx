@@ -14,6 +14,7 @@ import "./styles/global.scss";
 import { Rules } from "./sections/Rules/Rules";
 import { Questionnaire } from "./sections/Questionnaire/Questionnaire";
 import { Footer } from "./components/Footer/Footer";
+import { useState } from "react";
 
 const hidenComponents = {
   open: {
@@ -25,6 +26,9 @@ const hidenComponents = {
 };
 
 function App() {
+  const [loaderFinished, setLoaderFinished] = useState(false);
+  const [isShowPage, setIsShowPage] = useState(false);
+
   return (
     <>
       <BrowserView>
@@ -33,22 +37,30 @@ function App() {
       <main>
         <Header />
 
-        <Hero />
-        <Reborn />
-        <Discover />
-        <Video />
-        <Schedule />
-        <Dates />
-        <Included />
-        <Preparation />
-        <Bring />
-        <Rules />
-        <Questionnaire />
+        <Hero setLoaderFinished={setLoaderFinished} showPage={setIsShowPage} />
 
-        <Footer />
+        <Root />
       </main>
     </>
   );
 }
+
+const Root = () => {
+  return (
+    <>
+      <Reborn />
+      <Discover />
+      <Video />
+      <Schedule />
+      <Dates />
+      <Included />
+      <Preparation />
+      <Bring />
+      <Rules />
+      <Questionnaire />
+      <Footer />
+    </>
+  );
+};
 
 export default App;

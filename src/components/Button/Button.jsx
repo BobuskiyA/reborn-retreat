@@ -8,6 +8,7 @@ export const Button = ({
   to,
   title,
   customClass,
+  ...rest
 }) => {
   const circle = useRef(null);
   const timeline = useRef(null);
@@ -55,6 +56,7 @@ export const Button = ({
       )}
       onMouseEnter={() => manageMouseEnter()}
       onMouseLeave={() => manageMouseLeave()}
+      {...rest}
     >
       {title}
       <div

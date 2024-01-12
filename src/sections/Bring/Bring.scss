@@ -100,8 +100,10 @@
     }
 
     h1 {
-      text-align: center;
-      margin: 4vw 0;
+      @include mq() {
+        text-align: center;
+        margin: 4vw 0;
+      }
     }
 
     &.first {
@@ -127,7 +129,6 @@
         @include mq($tablet, ">") {
           width: calc(50% - 1vw);
           box-sizing: border-box;
-          display: none;
         }
       }
     }

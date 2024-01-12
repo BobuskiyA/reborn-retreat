@@ -10,7 +10,9 @@ import { Nav } from "../Nav/Nav";
 
 export const Header = () => {
   return (
-    <header className="header">
+    <header className="header"
+    // data-hidden
+    >
       <Logo className="header__logo" />
 
       <div className="header__wrapper">
