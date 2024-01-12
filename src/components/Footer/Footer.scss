@@ -11,16 +11,28 @@
     align-items: center;
   }
 
-  &-right {
+  &__right {
     display: flex;
     gap: 8vw;
+
+    @include mq() {
+      flex-direction: column;
+      
+    }
   }
 
   &__logo {
     width: 15vw;
 
     @include mq() {
-      width: 34vw;
+      width: 24vw;
+    }
+  }
+
+  &-text {
+    &-name {
+      font-weight: bold;
+      border-bottom: 0.1vw solid $c-black;
     }
   }
 

@@ -4,8 +4,8 @@
   position: fixed;
   width: 1vw;
   z-index: 20;
-  top: 0;
-  bottom: 0;
+  top: 10%;
+  bottom: 10%;
   right: 0;
   margin: auto;
   mix-blend-mode: difference;
@@ -16,7 +16,7 @@
     width: 0.5vw;
     height: 25lvh;
     border-radius: 5vw;
-    background-color: $c-yellow;
+    background-color: $c-yellow-primary;
     border: 0.1vw solid $c-white;
     transform: translate(0, 100%);
   }

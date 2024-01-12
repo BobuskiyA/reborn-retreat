@@ -23,7 +23,7 @@ export const calendarAnim = {
     },
     open: {
       opacity: 0.6,
-      filter: "blur(0.3vw)",
+      filter: "blur(0.5vw)",
       transform: "scale(1.2)",
       transition: { duration: 0.35 },
     },
@@ -42,11 +42,12 @@ export const Menu = {
       height: 0,
       left: 0,
       right: 0,
+      top: '17vw'
     },
     enter: {
       height: "100lvh",
       transition: {
-        duration: 1,
+        duration: 1.5,
         ease: [0.76, 0, 0.24, 1],
       },
     },

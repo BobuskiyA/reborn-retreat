@@ -43,9 +43,7 @@
       height: 100%; 
 
       @include mq() {
-        position: absolute;
-        transform: translateX(-120%);
-        align-self: flex-start;
+        display: none;
       }
     }
   }
