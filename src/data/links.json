@@ -1,19 +1,19 @@
 [
   {
     "name": "Home",
-    "link": "#/"
+    "link": "#top"
   },
   {
     "name": "Packages",
-    "link": "#/"
+    "link": "#packages"
   },
   {
     "name": "Does this program suit you?",
-    "link": "#/"
+    "link": "#program-suit"
   },
   {
     "name": "Preparation",
-    "link": "#/"
+    "link": "#preparation"
   },
   {
     "name": "Questionnaire",

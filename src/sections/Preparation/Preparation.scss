@@ -39,6 +39,8 @@
 
     &-image {
       width: 3vw;
+      object-fit: cover;
+      height: 100%; 
 
       @include mq() {
         position: absolute;
@@ -51,7 +53,7 @@
   &__item {
     display: flex;
     align-items: center;
-    gap: 0.5vw;
+    gap: 1.5vw;
     padding: 1vw 0.5vw;
 
     position: relative;

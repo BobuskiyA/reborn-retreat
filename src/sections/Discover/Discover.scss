@@ -12,6 +12,7 @@
   &__list {
     display: grid;
     align-items: stretch;
+    justify-items: center;
     justify-content: space-around;
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(3, 1fr);
@@ -31,10 +32,11 @@
     text-align: center;
     flex-direction: column;
     justify-content: space-evenly;
-
+    width: 80%;
     height: 120%;
-
+    
     @include mq() {
+      width: 100%;
       gap: 4vw;
     }
 
@@ -47,13 +49,25 @@
         }
       }
     }
+    
+    &:nth-of-type(1),
+    &:nth-of-type(5),
+    &:nth-of-type(6) {
+      .discover__image {
+        width: 10vw;
+
+        @include mq() {
+          width: 14%;
+        }
+      }
+    }
   }
 
   &__image {
-    width: 8vw;
-
+    width: 14vw;
+    
     @include mq() {
-      width: 16%;
+      width: 8vw;
     }
   }
 }

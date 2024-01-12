@@ -5,7 +5,7 @@ import preparationList from "@/data/preparation.json";
 
 export const Preparation = () => {
   return (
-    <section className="preparation">
+    <section className="preparation" id="preparation">
       <h1>Preparation</h1>
 
       <div className="preparation__wrapper">

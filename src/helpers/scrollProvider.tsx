@@ -7,6 +7,14 @@ type ScrollProviderProps = {
 
 type ScrollToFunction = (event: React.MouseEvent, currentLink: string) => void
 
+function easeInOutExpo(x: number): number {
+  return x === 0
+    ? 0
+    : x === 1
+    ? 1
+    : x < 0.5 ? Math.pow(2, 20 * x - 10) / 2
+    : (2 - Math.pow(2, -20 * x + 10)) / 2;
+  }
 
 export const ScrollProvider: React.FC<ScrollProviderProps> = ({ children }) => {
   
@@ -20,7 +28,6 @@ export const ScrollProvider: React.FC<ScrollProviderProps> = ({ children }) => {
         lenisOptions: {
           duration: 0.7,
           lerp: 0.1,
-          // smoothTouch: true,
           smoothWheel: true,
           wheelMultiplier: 2,
         }
@@ -32,8 +39,8 @@ export const ScrollProvider: React.FC<ScrollProviderProps> = ({ children }) => {
     console.log(currentLink)
     e.preventDefault() 
     locomotiveScroll.current.scrollTo(currentLink, { 
-      duration: 2.7, 
-      offset: -50 
+      duration: 1.7,
+      easing: (x: number) => easeInOutExpo(x),
     })
   }
 

@@ -23,7 +23,7 @@ export const Dates = () => {
   }
 
   return (
-    <section className="dates">
+    <section className="dates" id="packages">
       <h1>Packages and entrance dates</h1>
       <div className="dates__wrapper">
         <div className="calendar">

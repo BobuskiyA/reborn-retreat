@@ -5,7 +5,7 @@ import { Button } from "@/components/Button/Button";
 
 export const Hero = () => {
   return (
-    <section className="hero">
+    <section className="hero" id="top">
       <img
         src="/images/hero-1.svg"
         alt="decor-1 hero"
