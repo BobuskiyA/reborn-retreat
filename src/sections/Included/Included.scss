@@ -1,12 +1,8 @@
 @import "/src/styles/global.scss";
 
 .included {
-  padding: 2vw 4vw 6vw;
+  padding: 2vw 6.5vw 6vw;
   border-bottom: 0.2vw solid $c-black;
-
-  @include mq() {
-    display: none;
-  }
 
   &__head {
     display: grid;
@@ -15,7 +11,7 @@
     height: 6vw;
 
     @include mq() {
-      height: 20vw;
+      height: 24vw;
     }
 
     &-item {
@@ -26,9 +22,22 @@
       justify-content: space-evenly;
       border-radius: 0.6vw 0.6vw 0 0;
 
+      @include mq() { 
+        padding: 2.5vw;
+        border-radius: 2vw 2vw 0 0;
+      }
+    
       &--main {
         align-items: flex-start;
         padding-left: 2.5vw;
+
+        @include mq() { 
+          padding: 0 2.5vw;
+
+          .included__head-title {
+            transform: rotate(0deg);
+          }
+        }
       }
     }
 
@@ -39,6 +48,9 @@
 
       @include mq() {
         font-size: 3vw;
+        line-height: normal;
+        text-align: justify;
+        transform: rotate(-90deg);
       }
     }
 
@@ -46,6 +58,7 @@
       font-size: 1.7vw;
 
       @include mq() {
+        border-top: 0.1vw solid $c-black;
         font-size: 3vw;
       }
     }
@@ -73,7 +86,7 @@
     &-text {
       padding: 1vw 2.5vw !important;
       text-align: left !important;
-      width: 81% !important;
+      width: 90% !important;
       justify-content: flex-start;
     }
 
@@ -84,19 +97,13 @@
         background-color: $c-pink-dark-seconary;  
       }
     }
-
-    &-check {
-      & > svg {
-        width: 4vw;
-      }
-    }
   }
 
   &__check {
     width: 1.2vw;
 
     @include mq() {
-      width: 4vw;
+      width: 3vw;
     }
   }
 
@@ -109,11 +116,23 @@
     border-radius: 0 0 0.6vw 0.6vw;
     padding: 3vw 0;
 
+    @include mq() {
+      border-radius: 0 0 2vw 2vw;
+      padding: 5vw 3vw;
+      flex-direction: column;
+      gap: 4vw;
+    }
+
     &-button {
       width: 12vw;
       height: 3vw;
 
       background-color: $c-green;
+
+      @include mq() {
+        width: 70%;
+        height: 10vw;
+      }
     }
   }
 }

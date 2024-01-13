@@ -16,7 +16,7 @@ const heroAnim = (tl, onComplete) => {
   tl.to("#hero-star", {
     left: "auto",
     top: "auto",
-    rotate: 300,
+    rotate: 360,
     duration: 3,
     delay: 0.4,
     ease: "power3.inOut",
@@ -117,7 +117,7 @@ export const Hero = ({ setLoaderFinished, showPage }) => {
 
           <span className="hero__line" />
 
-          <h1 id="hero-text">
+          <h1 id="hero-text" className="hero__subtitle">
             Revive the inner child and
             <br />
             plant a seed
