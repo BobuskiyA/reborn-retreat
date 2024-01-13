@@ -18,7 +18,7 @@ export const MenuButton = ({ isActive, toggleMenu }) => {
           }}
         >
           <div className="perspectiveText">
-            <p>Menu</p>
+            <img src="/images/menu-burger.svg" alt="" />
           </div>
         </div>
         <div
@@ -28,7 +28,7 @@ export const MenuButton = ({ isActive, toggleMenu }) => {
           }}
         >
           <div className="perspectiveText">
-            <p>Close</p>
+          <img src="/images/menu-cross.svg" alt="" />
           </div>
         </div>
       </motion.div>

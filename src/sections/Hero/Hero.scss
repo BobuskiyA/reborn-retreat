@@ -2,7 +2,7 @@
 
 .hero {
   position: relative;
-  height: max(100lvh, 500px);
+  height: max(100lvh, 700px);
 
   &__wrapper {
     display: flex;
@@ -14,7 +14,7 @@
     transform: translateY(-50%);
 
     @include mq() {
-      top: 64%;
+      top: 65%;
     }
   }
 
@@ -25,9 +25,26 @@
     
     @include mq() {
       gap: 1vw;
-      text-align: center;
-      align-items: center;
     }
+
+    .char-mask {
+      position: relative;
+      overflow: hidden;
+      display: inline-flex;
+      gap: 0.5vw;
+
+      @include mq() {
+        gap: 1vw;
+      }
+
+      .word {
+        text-wrap: nowrap;
+      }
+    }
+  }
+
+  &__subtitle {
+    text-transform: none;
   }
 
   &__image {
@@ -41,7 +58,7 @@
       height: 60vw;
       position: absolute;
       z-index: -1;
-      top: -97%;
+      top: -120%;
     }
     }
     
@@ -59,7 +76,7 @@
 
     @include mq() {
       width: 40vw;
-      height: 7vw;
+      height: 12vw;
     }
   }
   
@@ -83,7 +100,7 @@
       width: 14vw;
 
       @include mq() {
-        // top: 20vw;
+        // top: 8vw;
         // width: 60vw;
         // left: 4vw;
         display: none;

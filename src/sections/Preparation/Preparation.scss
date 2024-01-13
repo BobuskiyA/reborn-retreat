@@ -1,12 +1,12 @@
 @import "/src/styles/global.scss";
 
 .preparation {
-  padding: 4vw 6vw;
+  padding: 4vw 6.5vw;
   border-bottom: 0.2vw solid $c-black;
   background-color: $c-white;
 
   @include mq() {
-    padding: 8vw 6vw;
+    padding: 8vw 5vw;
   }
 
   &__wrapper {

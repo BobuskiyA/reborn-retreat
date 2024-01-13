@@ -3,7 +3,7 @@
 .questionnaire {
   &-container {
     display: flex;
-    padding: 6vw;
+    padding: 6.5vw;
     gap: 2vw;
 
     @include mq() {

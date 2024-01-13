@@ -21,6 +21,11 @@
       width: 5vw;
       top: 34%;
       left: 20%;
+
+      @include mq() {
+        width: 13vw;
+        top: 23%;
+      }
     }
     
     &-2 {
@@ -29,6 +34,12 @@
       left: 35%;
 
       transform: rotate(5deg);
+
+      @include mq() {
+        width: 28vw;
+        top: 17%;
+        left: 55%;
+      }
     }
     
     &-3 {
@@ -37,6 +48,12 @@
       left: 47%;
 
       transform: rotate(-45deg);
+
+      @include mq() {
+        width: 15vw;
+        top: 6%;
+        left: 76%;
+      }
     }
   }
 
@@ -46,12 +63,13 @@
     border-bottom: 0.2vw solid $c-black;
     display: flex;
     justify-content: space-between;
-    padding: 2vw 6vw;
+    padding: 2vw 6.5vw;
     gap: 5vw;
 
     @include mq() {
       flex-direction: column;
       padding: 8vw;
+      gap: 20vw;
     }
 
     & > h2, p {
@@ -68,7 +86,7 @@
   align-items: center;
   justify-content: space-between;
   border-bottom: 0.2vw solid $c-black;
-  padding: 2vw;
+  padding: 2vw 6.5vw;
 
   @include mq() {
     flex-direction: column;
