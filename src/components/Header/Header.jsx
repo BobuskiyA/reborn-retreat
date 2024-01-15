@@ -31,7 +31,7 @@ export const Header = () => {
           ))}
         </ul>
 
-        <Button title="Contact Us" to="/" customClass="header__button" />
+        <Button title="Contact Us" to="https://t.me/ate_matos" customClass="header__button" />
       </div>
 
       <div className="header__nav">

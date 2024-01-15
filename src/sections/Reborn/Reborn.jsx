@@ -52,7 +52,7 @@ export const Reborn = () => {
         <img src="/images/percent.svg" alt="percent" className="discount__percent"/>
         <div className="discount__wrapper">
           <h2>Ask for big discount opportunity here</h2>
-          <Button to="/" title="Get Discount" customClass="discount__button" />
+          <Button to="https://t.me/ate_matos" title="Get Discount" customClass="discount__button" />
         </div>
         <img src="/images/percent.svg" alt="percent" className="discount__percent"/>
       </section>

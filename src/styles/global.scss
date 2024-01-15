@@ -3,12 +3,17 @@
 @import "./utils/mixins";
 @import "./utils/variables";
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: $c-pink-primary;
   @extend %body-text;
   -ms-overflow-style: none;
   scrollbar-width: none;
   color: $c-black;
+  overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {

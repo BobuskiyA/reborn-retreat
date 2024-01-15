@@ -14,7 +14,7 @@
   &__bee {
     position: absolute;
     z-index: 2;
-  
+
     &-1 {
       width: 5vw;
       top: 34%;
@@ -25,7 +25,7 @@
         top: 23%;
       }
     }
-    
+
     &-2 {
       width: 10vw;
       top: 35%;
@@ -39,12 +39,11 @@
         left: 55%;
       }
     }
-    
+
     &-3 {
       width: 6vw;
       top: 2%;
-      left: 47%;
-
+      left: 46%;
       transform: rotate(-45deg);
 
       @include mq() {
@@ -61,8 +60,8 @@
     border-bottom: 0.2vw solid $c-black;
     display: flex;
     justify-content: space-between;
-    padding: 2vw 6.5vw;
-    gap: 5vw;
+    padding: 4vw 6.5vw;
+    gap: 7vw;
 
     @include mq() {
       flex-direction: column;
@@ -70,7 +69,8 @@
       gap: 20vw;
     }
 
-    & > h2, p {
+    & > h2,
+    p {
       flex: 1;
       position: relative;
       z-index: 2;
@@ -94,7 +94,7 @@
   &__button {
     width: 14vw;
     height: 3.5vw;
-    
+
     background-color: $c-purple;
 
     @include mq() {
@@ -113,7 +113,7 @@
         top: 2vw;
         right: 2vw;
       }
-      
+
       &:nth-of-type(2) {
         bottom: 2vw;
         left: 2vw;
