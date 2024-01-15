@@ -25,7 +25,7 @@
     flex-direction: column;
     flex-wrap: wrap;
     gap: 1vw;
-    padding: 1vw 0.5vw 1vw 2vw;
+    // padding: 1vw 0.5vw 1vw 2vw;
 
     @include mq() {
       gap: 6vw;

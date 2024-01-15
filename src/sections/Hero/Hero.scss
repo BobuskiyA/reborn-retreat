@@ -111,7 +111,7 @@
       width: 12vw;
       right: 5vw;
       bottom: -14vw;
-      transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%) !important;
 
       @include mq() {
         width: 42vw;

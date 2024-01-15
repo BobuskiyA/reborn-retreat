@@ -31,36 +31,18 @@
     align-items: center;
     text-align: center;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: flex-start;
+    gap: 1vw;
     width: 80%;
-    height: 120%;
     
     @include mq() {
       width: 46%;
       gap: 4vw;
     }
-
-    &:nth-of-type(2) {
-      .discover__image {
-        @include mq($tablet, '>') {
-          width: 6vw;
-        }
-      }
-    }
-    
-    &:nth-of-type(1),
-    &:nth-of-type(5),
-    &:nth-of-type(6) {
-      .discover__image {
-        @include mq($tablet, '>') {
-          width: 10vw;
-        }
-      }
-    }
   }
 
   &__image {
-    width: 14vw;
+    width: 10vw;
     
     @include mq() {
       width: 100%;
