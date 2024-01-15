@@ -2,7 +2,8 @@
 
 .hero {
   position: relative;
-  height: max(51vw, 370px);
+  height: max(47vw, 370px);
+  margin-top: 2vw;
 
   @include mq() {
     height: 90lvh;
@@ -99,8 +100,8 @@
 
     &-1 {
       left: 15vw;
-      top: 7vw;
-      width: 18vw;
+      top: 6vw;
+      width: 16vw;
 
       @include mq() {
         // top: 8vw;

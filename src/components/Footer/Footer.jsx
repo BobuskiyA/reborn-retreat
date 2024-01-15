@@ -13,19 +13,19 @@ import { Logo } from "../Logo/Logo";
 const socials = [
   {
     icon: telegramIcon,
-    link: "#",
+    link: "https://t.me/ate_matos",
   },
   {
     icon: instagramIcon,
-    link: "#",
+    link: "https://www.instagram.com/lmdlmpm?igsh=MWpmM2dmOHlzcmNrOA==",
   },
   {
     icon: whatsappIcon,
-    link: "#",
+    link: "https://wa.me/17868035407",
   },
   {
     icon: messengerIcon,
-    link: "#",
+    link: "https://www.facebook.com/ate.castro?mibextid=LQQJ4d",
   },
 ];
 

@@ -121,10 +121,9 @@ export const Dates = () => {
                   <p className="packages__term">{d.term}</p>
                   <hr
                     style={{
-                      height: "0.3vw",
                       backgroundColor: d.color,
-                      margin: "0 0 0 0",
                     }}
+                    className="packages__line"
                   />
                   <p>Entrance dates:</p>
                   <p className="packages__entrance">{d.entrance}</p>

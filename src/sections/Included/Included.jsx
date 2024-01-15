@@ -74,7 +74,7 @@ export const Included = () => {
         </h2>
         <Button
           customClass="included__footer-button"
-          to="/"
+          to="https://t.me/ate_matos"
           title="Join Us"
         />
       </footer>

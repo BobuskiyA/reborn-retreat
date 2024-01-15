@@ -91,10 +91,10 @@
     }
 
     &:nth-of-type(2n) {
-      background-color: $c-pink-dark;
       
+      background-color: $c-pink-dark-seconary;  
       .included__content-item {
-        background-color: $c-pink-dark-seconary;  
+        background-color: $c-pink-dark;
       }
     }
   }

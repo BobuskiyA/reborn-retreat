@@ -109,11 +109,12 @@ export const Hero = ({ setLoaderFinished, showPage }) => {
         </div>
         <div className="hero__text">
           <h1 className="big-text">
-            <span data-splitting="words">
+            {/* <span data-splitting="words">
               <span className="char-mask" data-splitting="chars">
                 Reborn Retreat
               </span>
-            </span>
+            </span> */}
+            Reborn Retreat
           </h1>
 
           <span className="hero__line" />
@@ -125,7 +126,7 @@ export const Hero = ({ setLoaderFinished, showPage }) => {
             <br />
             of love
           </h1>
-          <Button title="Join Us" to="/" customClass="hero__button" />
+          <Button title="Join Us" to="https://t.me/ate_matos" customClass="hero__button" />
         </div>
 
         <img

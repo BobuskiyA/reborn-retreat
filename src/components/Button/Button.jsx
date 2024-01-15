@@ -56,6 +56,7 @@ export const Button = ({
       )}
       onMouseEnter={() => manageMouseEnter()}
       onMouseLeave={() => manageMouseLeave()}
+      target="_blank"
       {...rest}
     >
       {title}

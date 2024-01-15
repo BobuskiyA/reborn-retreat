@@ -16,8 +16,8 @@ export const Questionnaire = () => {
           </p>
           <Button
             title="Start"
-            to="/"
-            customClass="questionnaire__button health"
+            to="https://docs.google.com/forms/d/e/1FAIpQLScIjSxq8P4mEk7eaj1wgaLzxexpAmb0rkUaKkDt3rn9YlDFwQ/viewform?usp=sf_link"
+            customClass="questionnaire__button health" 
           />
         </div>
         <div className="questionnaire-block laughter">
@@ -29,7 +29,7 @@ export const Questionnaire = () => {
           </p>
           <Button
             title="Start"
-            to="/"
+            to="https://docs.google.com/forms/d/e/1FAIpQLScFtZ0sXO_XGOI6eDYmn9XIY68oBft2kS_Gm2q6Uln4_BWY_w/viewform?usp=sf_link"
             customClass="questionnaire__button laughter"
           />
         </div>
