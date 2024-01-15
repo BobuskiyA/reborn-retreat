@@ -58,7 +58,11 @@ export const Dates = () => {
                 // onMouseOver={() => handleSelected(true, 1)} 
                 // onMouseLeave={() => handleSelected(false, 1)} 
               >
-                <p className="type-1">{currNum}</p>
+                <p className="type-1">
+                  <span>
+                    {currNum}
+                  </span>
+                </p>
               </motion.li>
             ))}
             {numbers.slice(10, 20).map((currNum) => (
@@ -70,7 +74,12 @@ export const Dates = () => {
                 // onMouseOver={() => handleSelected(true, 2)} 
                 // onMouseLeave={() => handleSelected(false, 2)} 
               >
-                <p className="type-2">{currNum}</p>
+                <p className="type-2">
+                  <span>
+                  {currNum}
+                  </span>
+                  {currNum === 20 && <span className="line"/>}
+                </p>
               </motion.li>
             ))}
             {numbers.slice(20, 30).map((currNum) => (
