@@ -30,7 +30,19 @@
       width: 47%;
       height: 43vw;
     }
+  
+    &:last-of-type {
+      .rules-content {
+        height: 88%;
+        margin-top: 1vw;
+
+        & > h1 {
+          line-height: 80%;
+        }
+      }
+    }
   }
+
 
   &__image {
     width: 100%;

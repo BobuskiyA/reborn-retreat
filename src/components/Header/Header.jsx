@@ -14,9 +14,9 @@ export const Header = () => {
   return (
     <motion.header
       className="header"
-      variants={headerAnim}
-      initial="initial"
-      animate="enter"
+      // variants={headerAnim}
+      // initial="initial"
+      // animate="enter"
     >
       <Logo className="header__logo" />
 

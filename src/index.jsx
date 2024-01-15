@@ -9,8 +9,8 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <ScrollProvider>
+    {/* <ScrollProvider> */}
       <App />
-    </ScrollProvider>
+    {/* </ScrollProvider> */}
   </React.StrictMode>
 );

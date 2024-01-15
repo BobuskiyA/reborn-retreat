@@ -2,7 +2,11 @@
 
 .hero {
   position: relative;
-  height: max(100lvh, 700px);
+  height: max(51vw, 370px);
+
+  @include mq() {
+    height: 90lvh;
+  }
 
   &__wrapper {
     display: flex;
@@ -96,8 +100,8 @@
 
     &-1 {
       left: 15vw;
-      top: 6vw;
-      width: 14vw;
+      top: 7vw;
+      width: 18vw;
 
       @include mq() {
         // top: 8vw;
@@ -108,9 +112,9 @@
     }
 
     &-2 {
-      width: 12vw;
+      width: 15vw;
       right: 5vw;
-      bottom: -14vw;
+      bottom: -17vw;
       transform: translate(-50%, -50%) !important;
 
       @include mq() {

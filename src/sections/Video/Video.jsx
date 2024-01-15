@@ -32,7 +32,7 @@ export const Video = () => {
   return (
     <div className="video" id="program-suit">
       <div className="video-container" onClick={handleVideoClick}>
-        <h2 className="video-title">Does this program suit you?</h2>
+        <h1 className="video-title">Does this program suit you?</h1>
         <img src="images/video/video-decor.png" alt="video-decor" />
         <ReactPlayer
           className="video-content"
