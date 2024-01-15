@@ -16,7 +16,7 @@ export const Bring = () => {
         />
         <img
           className="bring-decor-2"
-          src="images/schedule-flower.svg"
+          src="images/bring-flower.svg"
           alt="bring-decor"
         />
         <div className="bring-content">

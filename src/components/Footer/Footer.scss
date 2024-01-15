@@ -11,6 +11,13 @@
     align-items: center;
   }
 
+  &__list-links {
+    margin-top: 1vw;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5vw;
+  }
+
   &__right {
     display: flex;
     gap: 8vw;
@@ -32,7 +39,10 @@
   &-text {
     &-name {
       font-weight: bold;
+      text-transform: uppercase;
       border-bottom: 0.1vw solid $c-black;
+      max-width: min-content;
+      text-wrap: nowrap;
     }
   }
 
@@ -48,11 +58,6 @@
 
   &__link {
     font: inherit;
-    transition: all 0.3s ease;
-
-    &:hover {
-      color: $c-white;
-    }
   }
 
   &__socials {

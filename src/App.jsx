@@ -17,33 +17,32 @@ import { Footer } from "./components/Footer/Footer";
 import { useState } from "react";
 import { AnimatePresence } from "framer-motion";
 
-const hidenComponents = {
-  open: {
-    display: "block",
-  },
-  close: {
-    display: "none",
-  },
-};
-
 function App() {
-  const [loaderFinished, setLoaderFinished] = useState(false);
-  const [isShowPage, setIsShowPage] = useState(false);
+  // const [loaderFinished, setLoaderFinished] = useState(false);
+  // const [isShowPage, setIsShowPage] = useState(true);
 
   return (
     <>
       <BrowserView>
         <AnimatePresence mode="popLayout">
-          {isShowPage && <ScrollBar />}
+          {/* {isShowPage &&  */}
+            <ScrollBar />
+          {/* } */}
         </AnimatePresence>
       </BrowserView>
       <main>
-        {isShowPage && <Header />}
+        {/* {isShowPage && */}
+          <Header />
+        {/* } */}
 
-        <Hero setLoaderFinished={setLoaderFinished} showPage={setIsShowPage} />
+        <Hero
+          // showPage={setIsShowPage}
+        />
 
 
-        {isShowPage && <Root />}
+        {/* {isShowPage && */}
+          <Root />
+        {/* } */}
       </main>
     </>
   );

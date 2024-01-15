@@ -30,7 +30,14 @@
       width: 47%;
       height: 43vw;
     }
+  
+    &:last-of-type {
+      .rules-content {
+        height: 88%;
+      }
+    }
   }
+
 
   &__image {
     width: 100%;

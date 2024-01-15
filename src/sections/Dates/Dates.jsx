@@ -53,10 +53,10 @@ export const Dates = () => {
               <motion.li
                 key={currNum}
                 class="calendar__day"
-                variants={calendarAnim.dates}
-                animate={handleAnim(1)}
-                onMouseOver={() => handleSelected(true, 1)} 
-                onMouseLeave={() => handleSelected(false, 1)} 
+                // variants={calendarAnim.dates}
+                // animate={handleAnim(1)}
+                // onMouseOver={() => handleSelected(true, 1)} 
+                // onMouseLeave={() => handleSelected(false, 1)} 
               >
                 <p className="type-1">{currNum}</p>
               </motion.li>
@@ -65,10 +65,10 @@ export const Dates = () => {
               <motion.li
                 key={currNum}
                 class="calendar__day"
-                variants={calendarAnim.dates}
-                animate={handleAnim(2)}
-                onMouseOver={() => handleSelected(true, 2)} 
-                onMouseLeave={() => handleSelected(false, 2)} 
+                // variants={calendarAnim.dates}
+                // animate={handleAnim(2)}
+                // onMouseOver={() => handleSelected(true, 2)} 
+                // onMouseLeave={() => handleSelected(false, 2)} 
               >
                 <p className="type-2">{currNum}</p>
               </motion.li>
@@ -77,10 +77,10 @@ export const Dates = () => {
               <motion.li
                 key={currNum}
                 class="calendar__day"
-                variants={calendarAnim.dates}
-                animate={handleAnim(3)}
-                onMouseOver={() => handleSelected(true, 3)} 
-                onMouseLeave={() => handleSelected(false, 3)} 
+                // variants={calendarAnim.dates}
+                // animate={handleAnim(3)}
+                // onMouseOver={() => handleSelected(true, 3)} 
+                // onMouseLeave={() => handleSelected(false, 3)} 
               >
                 <p className="type-3">{currNum}</p>
               </motion.li>
@@ -94,10 +94,10 @@ export const Dates = () => {
               <motion.li
                 key={`pack-${index}`}
                 className="packages__item"
-                variants={calendarAnim.cards}
-                onMouseOver={() => handleSelected(true, index)} 
-                onMouseLeave={() => handleSelected(false, index)} 
-                animate={handleAnim(index)}
+                // variants={calendarAnim.cards}
+                // onMouseOver={() => handleSelected(true, index)} 
+                // onMouseLeave={() => handleSelected(false, index)} 
+                // animate={handleAnim(index)}
               >
                 <span className="packages__title" style={{ backgroundColor: d.color }}>
                   {d.name}
