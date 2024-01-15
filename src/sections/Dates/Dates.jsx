@@ -32,6 +32,11 @@ export const Dates = () => {
             alt="star"
             className="calendar__star"
           />
+          <img
+            src="/images/doodles.svg"
+            alt="star"
+            className="calendar__doodles"
+          />
           <h1 className="calendar__mounth">April</h1>
           <ul class="calendar__weekdays">
             <li>S</li>

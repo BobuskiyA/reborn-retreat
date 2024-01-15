@@ -28,7 +28,7 @@ const hidenComponents = {
 
 function App() {
   const [loaderFinished, setLoaderFinished] = useState(false);
-  const [isShowPage, setIsShowPage] = useState(true);
+  const [isShowPage, setIsShowPage] = useState(false);
 
   return (
     <>
