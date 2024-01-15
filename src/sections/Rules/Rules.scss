@@ -34,6 +34,11 @@
     &:last-of-type {
       .rules-content {
         height: 88%;
+        margin-top: 1vw;
+
+        & > h1 {
+          line-height: 80%;
+        }
       }
     }
   }
