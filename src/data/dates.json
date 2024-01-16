@@ -1,30 +1,30 @@
-[ 
+[
   {
     "name": "Full Package",
     "term": "30 days",
     "entrance": "1st - 30th of April",
     "welcomed": "31st of March",
-     "color": "#E4D47F"
+    "color": "#E4D47F"
   },
   {
     "name": "First Entrance",
     "term": "1st 10 days",
     "entrance": "1st - 10th of April",
     "welcomed": "31st of March",
-     "color": "#C3C2E1"
+    "color": "#C3C2E1"
   },
   {
     "name": "Thai Massage",
     "term": "2st 10 days",
     "entrance": "10st - 20th of April",
     "welcomed": "9th of April",
-     "color": "#FFB087"
+    "color": "#FFB087"
   },
   {
     "name": "Last Entrance",
     "term": "3rd 10 days",
     "entrance": "20st - 30th of April",
     "welcomed": "19th of April",
-     "color": "#C6E1DF"
+    "color": "#C6E1DF"
   }
 ]

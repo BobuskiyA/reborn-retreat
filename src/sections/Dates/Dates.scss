@@ -123,10 +123,9 @@
           position: absolute;
           width: 28%;
           left: 50%;
-
         }
       }
-      
+
       &:nth-of-type(21) {
         .type-2 {
           position: relative;
@@ -210,9 +209,12 @@
       border-radius: 1vw 1vw 0 0;
 
       @include mq() {
+        display: flex;
         padding: 3vw 1vw;
         border-radius: 2vw 2vw 0 0;
-        font-size: 5vw;
+        font-size: 4vw;
+        flex-wrap: nowrap;
+        justify-content: center;
       }
     }
 
