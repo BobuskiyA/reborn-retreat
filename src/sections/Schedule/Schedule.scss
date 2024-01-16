@@ -5,6 +5,7 @@
   border-bottom: 0.2vw solid $c-black;
   padding: 4vw 6.5vw;
   position: relative;
+  overflow: hidden;
 
   @include mq() {
     padding: 8vw;

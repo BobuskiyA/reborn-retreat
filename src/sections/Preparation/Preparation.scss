@@ -45,7 +45,17 @@
       @include mq() {
         display: none;
       }
+
+      &-1 { 
+        height: 6.1vw;
+        width: 3.5vw;
+      }
+
+      &-2 {
+        height: 129%;
+      }
     }
+
   }
   
   &__item {

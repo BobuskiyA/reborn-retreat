@@ -2,8 +2,7 @@
 
 .hero {
   position: relative;
-  height: max(47vw, 370px);
-  margin-top: 2vw;
+  height: max(53vw, 370px);
 
   @include mq() {
     height: 90lvh;
@@ -15,7 +14,7 @@
     position: absolute;
     left: 0;
     right: 0;
-    top: 50%;
+    top: 50.7%;
     transform: translateY(-50%);
 
     @include mq() {
@@ -26,7 +25,7 @@
   &__text {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
 
     @include mq() {
       gap: 1vw;
@@ -54,8 +53,8 @@
 
   &__image {
     &-wrapper {
-      width: 34vw;
-      height: 24vw;
+      width: 43vw;
+      height: 30.8vw;
       overflow: hidden;
 
       @include mq() {
@@ -73,8 +72,8 @@
   }
 
   &__button {
-    width: 14vw;
-    height: 3.5vw;
+    width: 15.5vw;
+    height: 3.8vw;
 
     background-color: $c-blue;
 
@@ -99,9 +98,9 @@
     position: absolute;
 
     &-1 {
-      left: 15vw;
-      top: 6vw;
-      width: 16vw;
+      left: 15.9vw;
+      top: 3.7vw;
+      width: 17.3vw;
 
       @include mq() {
         // top: 8vw;
@@ -112,8 +111,8 @@
     }
 
     &-2 {
-      width: 15vw;
-      right: 0;
+      width: 15.4vw;
+      right: -0.2vw;
       bottom: -17vw;
       transform: translate(-50%, -50%) !important;
 
