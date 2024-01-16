@@ -3,7 +3,7 @@
 .video {
   background-color: $c-white;
   border-bottom: 0.2vw solid $c-black;
-  padding: 6.5vw;
+  padding: 4.7vw 6.5vw;
 
   display: flex;
   justify-content: center;
@@ -20,7 +20,7 @@
       width: 20vw;
       position: absolute;
       right: -3vw;
-      top: 2vw;
+      top: 6vw;
       object-fit: cover;
       z-index: 0;
 
@@ -31,9 +31,10 @@
   }
 
   &-title {
-    margin-bottom: 2vw;
+    margin-bottom: 3.2vw;
     position: relative;
     z-index: 1;
+    text-transform: capitalize;
   }
   &-content {
     video {

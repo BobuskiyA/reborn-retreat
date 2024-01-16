@@ -31,7 +31,7 @@ export const Preparation = () => {
               <img
                 src={currPrerp.image}
                 alt={`step-${index}`}
-                className="preparation__list-image"
+                className={`preparation__list-image preparation__list-image-${index}`}
               />
               {!currPrerp.link ? (
                 <p className="preparation__list-text">{currPrerp.text}</p>

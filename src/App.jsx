@@ -14,7 +14,7 @@ import "./styles/global.scss";
 import { Rules } from "./sections/Rules/Rules";
 import { Questionnaire } from "./sections/Questionnaire/Questionnaire";
 import { Footer } from "./components/Footer/Footer";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { AnimatePresence } from "framer-motion";
 
 function App() {
