@@ -27,7 +27,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+
     &:nth-of-type(2) {
       flex-direction: row-reverse;
     }
@@ -39,6 +39,9 @@
 
   &__text {
     width: 52%;
+    @include mq() {
+      width: 100%;
+    }
 
     & > h1 {
       margin-bottom: 2vw;
@@ -68,7 +71,7 @@
       right: 2%;
     }
   }
-  
+
   &__rectangle {
     position: absolute;
     width: 33.1vw;
