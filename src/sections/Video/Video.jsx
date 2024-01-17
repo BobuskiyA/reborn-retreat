@@ -34,36 +34,38 @@ export const Video = () => {
       <div className="video-container" onClick={handleVideoClick}>
         <h1 className="video-title">Does this program suit you?</h1>
         <img src="images/video/video-decor.png" alt="video-decor" />
-        <ReactPlayer
-          className="video-content"
-          ref={playerRef}
-          url={videoFileName}
-          playing={playing}
-          onPause={handlePause}
-          onPlay={handlePlay}
-          onEnded={handleVideoEnded}
-          width="100%"
-          height="100%"
-        />
-        {!playing && (
-          <div className="play-button-container">
-            <button className="play-button" onClick={handlePlayPause}>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="85"
-                height="110"
-                viewBox="0 0 85 110"
-                fill="none"
-              >
-                <path
-                  d="M0 -0.000244141L85 57.4998L0 110V-0.000244141Z"
-                  fill="white"
-                  fill-opacity="0.52"
-                />
-              </svg>
-            </button>
-          </div>
-        )}
+        <div className="video-wrapper">
+          <ReactPlayer
+            className="video-content"
+            ref={playerRef}
+            url={videoFileName}
+            playing={playing}
+            onPause={handlePause}
+            onPlay={handlePlay}
+            onEnded={handleVideoEnded}
+            width="100%"
+            height="100%"
+          />
+          {!playing && (
+            <div className="play-button-container">
+              <button className="play-button" onClick={handlePlayPause}>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="85"
+                  height="110"
+                  viewBox="0 0 85 110"
+                  fill="none"
+                >
+                  <path
+                    d="M0 -0.000244141L85 57.4998L0 110V-0.000244141Z"
+                    fill="white"
+                    fill-opacity="0.52"
+                  />
+                </svg>
+              </button>
+            </div>
+          )}
+        </div>
       </div>
     </div>
   );

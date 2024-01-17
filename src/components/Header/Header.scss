@@ -1,14 +1,14 @@
 @import "/src/styles/global.scss";
 
 .header {
-  display: flex;
   align-items: center;
-  flex-direction: row;
-  justify-content: space-around;
-
-  height: 7.8vw;
   background-color: $c-purple;
+  display: flex;
+  flex-direction: row;
+  height: 7.8vw;
+  justify-content: space-between;
   z-index: 10;
+  padding: 0 6.5vw;
 
   @include mq() {
     height: 18vw;
@@ -53,16 +53,16 @@
     font-size: 1.2vw;
     font: inherit;
   }
-  
+
   &__button {
     width: 15.5vw;
     height: 48.3%;
-    
+
     background-color: $c-orange;
   }
 
   &__nav {
-    @include mq($tablet + 1, '>') {
+    @include mq($tablet + 1, ">") {
       display: none;
     }
   }
