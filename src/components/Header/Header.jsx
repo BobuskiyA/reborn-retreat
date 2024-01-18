@@ -25,7 +25,9 @@ export const Header = () => {
           {LinkList.map((currLink, index) => (
             <li key={`header_link_${index}`}>
               <AnchorLink className="header__link" toSection={currLink.link}>
-                {currLink.name}
+                <span>
+                  {currLink.name}
+                </span>
               </AnchorLink>
             </li>
           ))}

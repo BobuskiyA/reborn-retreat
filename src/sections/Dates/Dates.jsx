@@ -13,7 +13,7 @@ export const Dates = () => {
     index: null,
   });
 
-  const handleAnim = (index) => {
+  const handleAnim = (index, secId = null) => {
     if (
       selectedCard.isActive &&
       selectedCard.index !== index &&
@@ -25,24 +25,31 @@ export const Dates = () => {
     return "closed";
   };
 
-  const handleSelected = (con, i) => {
-    return setSelectedCard({ isActive: con, index: i });
-  };
+  const handleSelected = (con, i, secondIndex = null) => {
+    if(secondIndex) {
+      return setSelectedCard({ isActive: con, index: i, secondIndex});
+    }
+    return setSelectedCard({ isActive: con, index: i});
+  };  
 
   return (
     <section className="dates" id="packages">
       <h1>Packages and entrance dates</h1>
       <div className="dates__wrapper">
         <div className="calendar">
-          <img
+          <motion.img
             src="/images/star-orange.svg"
             alt="star"
             className="calendar__star"
+            initial={{ rotate: '0deg' }}
+            animate={{ rotate: selectedCard.isActive ? '10deg' : '0deg' }}
           />
-          <img
+          <motion.img
             src="/images/doodles.svg"
             alt="star"
             className="calendar__doodles"
+            initial={{ rotate: '0deg' }}
+            animate={{ rotate: selectedCard.isActive ? '-15deg' : '0deg' }}
           />
           <h1 className="calendar__mounth">April</h1>
           <ul class="calendar__weekdays">
@@ -60,24 +67,35 @@ export const Dates = () => {
               <motion.li
                 key={currNum}
                 class="calendar__day"
-                // variants={calendarAnim.dates}
-                // animate={handleAnim(1)}
-                // onMouseOver={() => handleSelected(true, 1)}
-                // onMouseLeave={() => handleSelected(false, 1)}
+                variants={calendarAnim.dates}
+                animate={handleAnim(1)}
+                onMouseOver={() => handleSelected(true, 1)}
+                onMouseLeave={() => handleSelected(false, 1)}
               >
                 <p className="type-1">
                   <span>{currNum}</span>
                 </p>
               </motion.li>
             ))}
+              <motion.li
+                class="calendar__day calendar__day--welcomed"
+                variants={calendarAnim.dates}
+                animate={handleAnim(2)}
+                onMouseOver={() => handleSelected(true, 1)}
+                onMouseLeave={() => handleSelected(false, 1)}
+              >
+                <p className="type-2">
+                  <span>10</span>
+                </p>
+              </motion.li>
             {numbers.slice(10, 20).map((currNum) => (
               <motion.li
                 key={currNum}
                 class="calendar__day"
-                // variants={calendarAnim.dates}
-                // animate={handleAnim(2)}
-                // onMouseOver={() => handleSelected(true, 2)}
-                // onMouseLeave={() => handleSelected(false, 2)}
+                variants={calendarAnim.dates}
+                animate={handleAnim(2)}
+                onMouseOver={() => handleSelected(true, 2)}
+                onMouseLeave={() => handleSelected(false, 2)}
               >
                 <p className="type-2">
                   <span>{currNum}</span>
@@ -85,14 +103,25 @@ export const Dates = () => {
                 </p>
               </motion.li>
             ))}
+            <motion.li
+                class="calendar__day calendar__day--welcomed-2"
+                variants={calendarAnim.dates}
+                animate={handleAnim(3)}
+                onMouseOver={() => handleSelected(true, 1)}
+                onMouseLeave={() => handleSelected(false, 1)}
+              >
+                <p className="type-3">
+                  <span>20</span>
+                </p>
+              </motion.li>
             {numbers.slice(20, 30).map((currNum) => (
               <motion.li
                 key={currNum}
                 class="calendar__day"
-                // variants={calendarAnim.dates}
-                // animate={handleAnim(3)}
-                // onMouseOver={() => handleSelected(true, 3)}
-                // onMouseLeave={() => handleSelected(false, 3)}
+                variants={calendarAnim.dates}
+                animate={handleAnim(3)}
+                onMouseOver={() => handleSelected(true, 3)}
+                onMouseLeave={() => handleSelected(false, 3)}
               >
                 <p className="type-3">{currNum}</p>
               </motion.li>
@@ -106,10 +135,10 @@ export const Dates = () => {
               <motion.li
                 key={`pack-${index}`}
                 className="packages__item"
-                // variants={calendarAnim.cards}
-                // onMouseOver={() => handleSelected(true, index)}
-                // onMouseLeave={() => handleSelected(false, index)}
-                // animate={handleAnim(index)}
+                variants={calendarAnim.cards}
+                onMouseOver={() => handleSelected(true, index)}
+                onMouseLeave={() => handleSelected(false, index)}
+                animate={handleAnim(index)}
               >
                 <span
                   className="packages__title"

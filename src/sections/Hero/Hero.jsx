@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
 
 import Splitting from "splitting";
@@ -7,6 +7,7 @@ import "splitting/dist/splitting-cells.css";
 
 import "./Hero.scss";
 import { Button } from "@/components/Button/Button";
+import { ScrollTrigger } from "gsap/all";
 
 // const heroAnim = (tl, onComplete) => {
 //   tl = gsap.timeline({
@@ -62,38 +63,28 @@ import { Button } from "@/components/Button/Button";
 // };
 
 export const Hero = ({ setLoaderFinished, showPage }) => {
-  // useEffect(() => {
-  //   Splitting();
+  const star = useRef(null);
+  const heroWrapper = useRef(null);
 
-  //   // gsap.set("#hero-star", {
-  //   //   top: "50%",
-  //   //   left: "50%",
-  //   // });
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
 
-  //   gsap.set("#hero-text, #hero-star, .hero__button", {
-  //     opacity: 0,
-  //     yPercent: 10,
-  //   });
-
-  //   gsap.set(".hero__image", {
-  //     clipPath: "inset(100% 0 0 0)",
-  //   });
-
-  //   gsap.set(".hero__decor-1, .hero__line", {
-  //     clipPath: "inset(0 100% 0 0)",
-  //   });
-
-  //   gsap.set(".hero__text .char-mask .char", {
-  //     yPercent: 110
-  //   })
-
-  //   const tl = gsap.timeline();
-
-  //   tl.add(heroAnim(tl, () => showPage(true)));
-  // }, []);
+    gsap
+      .timeline({
+      scrollTrigger: {
+        trigger: heroWrapper.current,
+        start: 'top 18%',
+        end: 'bottom top',
+        scrub: true,
+      }
+    })
+    .to(star.current, {
+      rotate: 50,
+    })
+  }, [])
 
   return (
-    <section className="hero" id="top">
+    <section className="hero" id="top" ref={heroWrapper}>
       <img
         src="/images/hero-1.svg"
         alt="decor-1 hero"
@@ -109,11 +100,6 @@ export const Hero = ({ setLoaderFinished, showPage }) => {
         </div>
         <div className="hero__text">
           <h1 className="big-text">
-            {/* <span data-splitting="words">
-              <span className="char-mask" data-splitting="chars">
-                Reborn Retreat
-              </span>
-            </span> */}
             Reborn Retreat
           </h1>
 
@@ -133,7 +119,7 @@ export const Hero = ({ setLoaderFinished, showPage }) => {
           src="/images/star-purple.svg"
           alt="hero star"
           className="hero__decor hero__decor-2"
-          id="hero-star"
+          ref={star}
         />
       </div>
     </section>
