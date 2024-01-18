@@ -1,10 +1,29 @@
-import React from "react";
+import React, { useEffect } from "react";
 import bringData from "@/data/bring.json";
 import "./Bring.scss";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/all";
 
 export const Bring = () => {
   const { bring, enteringThailand, arrivingToPhangan, weatherInApril } =
     bringData;
+
+    useEffect(() => {
+      gsap.registerPlugin(ScrollTrigger);
+  
+      gsap
+        .timeline({
+        scrollTrigger: {
+          trigger: '.bring',
+          start: 'top bottom',
+          end: 'bottom top',
+          scrub: true,
+        }
+      })
+      .to('.bring-decor-1, .bring-decor-2', {
+        rotate: gsap.utils.random(50, 100),
+      })
+    }, [])
 
   return (
     <section className="bring">

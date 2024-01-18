@@ -1,8 +1,12 @@
-import React from "react";
-import "./Reborn.scss";
+import React, { useEffect, useRef } from "react";
+import { motion, useInView } from "framer-motion";
 import { Button } from "@/components/Button/Button";
+import "./Reborn.scss";
 
 export const Reborn = () => {
+  const discountSection = useRef(null);
+  const isInView = useInView(discountSection);
+
   return (
     <section className="reborn">
       <img
@@ -48,13 +52,26 @@ export const Reborn = () => {
           Chandra Kumar.
         </p>
       </div>
-      <section className="discount">
-        <img src="/images/percent.svg" alt="percent" className="discount__percent"/>
+
+      <section className="discount" ref={discountSection}>
+        <motion.img
+          src="/images/percent.svg"
+          alt="percent"
+          className="discount__percent discount__percent-1"
+          initial={{ transform: 'translateX(-18vw)' }}
+          animate={{ transform: isInView ? 'translateX(0)' : 'translateX(-18vw)', transition: { duration: 0.5, delay: 0.2 }, }}
+        />
         <div className="discount__wrapper">
           <h2>Ask for big discount opportunity here</h2>
           <Button to="https://t.me/ate_matos" title="Get Discount" customClass="discount__button" />
         </div>
-        <img src="/images/percent.svg" alt="percent" className="discount__percent"/>
+        <motion.img
+          src="/images/percent.svg"
+          alt="percent"
+          className="discount__percent discount__percent-2"
+          initial={{ transform: 'translateX(18vw)'}}
+          animate={{ transform: isInView ? 'translateX(0)' : 'translateX(18vw)', transition: { duration: 0.5, delay: 0.2 }, }}
+        />
       </section>
     </section>
   );

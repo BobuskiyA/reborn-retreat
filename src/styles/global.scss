@@ -3,10 +3,6 @@
 @import "./utils/mixins";
 @import "./utils/variables";
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   background-color: $c-pink-primary;
   @extend %body-text;
