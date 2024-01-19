@@ -34,6 +34,7 @@
       top: -3vw;
       right: 1vw;
       width: 8.5vw;
+      @include rotation();
     }
 
     &__doodles {

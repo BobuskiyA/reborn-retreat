@@ -8,23 +8,6 @@ export const Bring = () => {
   const { bring, enteringThailand, arrivingToPhangan, weatherInApril } =
     bringData;
 
-    useEffect(() => {
-      gsap.registerPlugin(ScrollTrigger);
-  
-      gsap
-        .timeline({
-        scrollTrigger: {
-          trigger: '.bring',
-          start: 'top bottom',
-          end: 'bottom top',
-          scrub: true,
-        }
-      })
-      .to('.bring-decor-1, .bring-decor-2', {
-        rotate: gsap.utils.random(50, 100),
-      })
-    }, [])
-
   return (
     <section className="bring">
       <div className="bring-container">

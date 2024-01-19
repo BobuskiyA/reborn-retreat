@@ -86,6 +86,8 @@
   border-bottom: 0.2vw solid $c-black;
   padding: 2vw 6.5vw;
 
+  overflow: hidden;
+
   @include mq() {
     flex-direction: column;
     padding: 14vw 8vw;

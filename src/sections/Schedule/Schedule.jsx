@@ -1,27 +1,9 @@
 import React, { useEffect } from "react";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/all";
 
 import scheduleList from "@/data/schedule.json";
 
 import "./Schedule.scss";
 export const Schedule = () => {
-  useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
-
-    gsap
-      .timeline({
-      scrollTrigger: {
-        trigger: '.schedule',
-        start: 'top 18%',
-        end: 'bottom top',
-        scrub: true,
-      }
-    })
-    .to('.schedule__flower', {
-      rotate: 150,
-    })
-  }, [])
 
   return (
     <section className="schedule">
