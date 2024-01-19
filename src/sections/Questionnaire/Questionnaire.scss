@@ -1,0 +1,49 @@
+@import "/src/styles/global.scss";
+
+.questionnaire {
+  &-container {
+    display: flex;
+    padding: 6.5vw;
+    gap: 2vw;
+
+    @include mq() {
+      flex-direction: column;
+    }
+  }
+
+  &-block {
+    flex: 1;
+    padding: 30px;
+    border-radius: 8px;
+
+    &.health {
+      background-color: $c-orange;
+    }
+
+    &.laughter {
+      background-color: $c-green;
+    }
+
+    p {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__button {
+    width: 15.5vw;
+    height: 3.8vw;
+
+    @include mq() {
+      width: 100%;
+      height: 10vw;
+    }
+
+    &.health {
+      background: #abd9dc;
+    }
+
+    &.laughter {
+      background: #c4c3e2;
+    }
+  }
+}

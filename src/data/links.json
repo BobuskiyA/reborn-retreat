@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Home",
+    "link": "#top"
+  },
+  {
+    "name": "Packages",
+    "link": "#packages"
+  },
+  {
+    "name": "Does this program suit you?",
+    "link": "#program-suit"
+  },
+  {
+    "name": "Preparation",
+    "link": "#preparation"
+  },
+  {
+    "name": "Questionnaire",
+    "link": "#questionnaire"
+  }
+]

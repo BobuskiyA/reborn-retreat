@@ -1,0 +1,101 @@
+@import "/src/styles/global.scss";
+
+.schedule {
+  background-color: $c-purple;
+  border-bottom: 0.2vw solid $c-black;
+  padding: 4vw 6.5vw;
+  position: relative;
+  overflow: hidden;
+
+  @include mq() {
+    padding: 8vw;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 4vw;
+    position: relative;
+    z-index: 1;
+
+    @include mq() {
+      gap: 12vw;
+    }
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &:nth-of-type(2) {
+      flex-direction: row-reverse;
+    }
+
+    @include mq() {
+      flex-direction: column !important;
+    }
+  }
+
+  &__text {
+    width: 52%;
+    @include mq() {
+      width: 100%;
+    }
+
+    & > h1 {
+      margin-bottom: 2vw;
+    }
+  }
+
+  &__image {
+    width: 35vw;
+    height: 21vw;
+
+    @include mq() {
+      width: 100%;
+      height: 48vw;
+    }
+  }
+
+  &__flower {
+    position: absolute;
+    width: 25.7vw;
+    top: 8vw;
+    right: -8vw;
+    z-index: 0;
+    @include rotation();
+
+    @include mq() {
+      width: 58vw;
+      top: 26%;
+      right: 2%;
+    }
+  }
+
+  &__rectangle {
+    position: absolute;
+    width: 33.1vw;
+    top: 48%;
+    left: 0;
+    z-index: 0;
+
+    @include mq() {
+      width: 75%;
+      top: 55%;
+    }
+  }
+
+  &__dots {
+    position: absolute;
+    bottom: 26%;
+    right: 47%;
+    z-index: 0;
+    width: 5vw;
+
+    @include mq() {
+      display: none;
+    }
+  }
+}
+

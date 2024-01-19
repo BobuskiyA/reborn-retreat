@@ -1,0 +1,99 @@
+@import "/src/styles/global.scss";
+
+.header {
+  align-items: center;
+  background-color: $c-purple;
+  display: flex;
+  flex-direction: row;
+  height: 7.8vw;
+  justify-content: space-between;
+  z-index: 10;
+  padding: 0 6.5vw;
+
+  @include mq() {
+    height: 18vw;
+    justify-content: space-between;
+    padding: 0 10vw;
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1.8vw;
+    height: 100%;
+
+    @include mq() {
+      display: none;
+    }
+  }
+
+  &__logo {
+    width: 6.5vw;
+    height: 6vw;
+    position: relative;
+    z-index: 100;
+
+    @include mq() {
+      width: 13vw;
+      height: 13vw;
+    }
+  }
+
+  &__list-links {
+    display: flex;
+    align-items: center;
+    gap: 0.5vw;
+
+    @include mq() {
+      display: none;
+    }
+  }
+
+  &__link {
+    font-size: 1.2vw;
+    font: inherit;
+    padding: 0.5vw 0.7vw;
+    position: relative;
+    z-index: 1;
+    
+    & > span {
+      position: relative;
+      z-index: 1;  
+    }
+
+    &::before {
+      display: block;
+      background: $c-green;
+
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      z-index: 0;
+      content: '';
+      
+      opacity: 0;
+      transition: all 0.3s ease-in-out;
+    }
+
+    &:hover {
+      &::before {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__button {
+    width: 15.5vw;
+    height: 48.3%;
+
+    background-color: $c-orange;
+  }
+
+  &__nav {
+    @include mq($tablet + 1, ">") {
+      display: none;
+    }
+  }
+}

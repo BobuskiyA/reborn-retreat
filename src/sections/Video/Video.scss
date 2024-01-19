@@ -1,0 +1,67 @@
+@import "/src/styles/global.scss";
+
+.video {
+  background-color: $c-white;
+  border-bottom: 0.2vw solid $c-black;
+  padding: 4.7vw 6.5vw;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include mq() {
+    padding: 8vw 4vw;
+  }
+
+  &-container {
+    position: relative;
+
+    img {
+      width: 20vw;
+      position: absolute;
+      right: -3vw;
+      top: 6vw;
+      object-fit: cover;
+      z-index: 0;
+
+      @include mq() {
+        top: 10vw;
+      }
+    }
+  }
+
+  &-title {
+    margin-bottom: 3.2vw;
+    position: relative;
+    z-index: 1;
+  }
+  &-content {
+    video {
+      position: relative;
+      border-radius: 15px !important;
+      z-index: 2;
+    }
+  }
+
+  .video-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+
+  .play-button-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+
+    .play-button {
+      color: #ffffff;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+  }
+}

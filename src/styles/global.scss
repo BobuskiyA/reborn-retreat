@@ -4,11 +4,12 @@
 @import "./utils/variables";
 
 body {
-  background-color: $black;
+  background-color: $c-pink-primary;
   @extend %body-text;
   -ms-overflow-style: none;
   scrollbar-width: none;
-  color: $white;
+  color: $c-black;
+  overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
@@ -18,8 +19,4 @@ body {
 .container {
   max-width: 90vw;
   margin: 0 auto;
-}
-
-[data-hidden] {
-  opacity: 0;
 }

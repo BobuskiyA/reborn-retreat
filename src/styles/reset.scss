@@ -17,7 +17,8 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-ul, ol {
+ul,
+ol {
   list-style: none;
 }
 
@@ -25,7 +26,9 @@ button {
   font-size: 100%;
 }
 
-input, button, textarea {
+input,
+button,
+textarea {
   margin: 0;
 }
 
@@ -38,7 +41,10 @@ a {
   text-decoration: none;
 }
 
-button, input[type="button"], input[type="submit"], input[type="reset"] {
+button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
   border: none;
   background: none;
   padding: 0;
@@ -50,6 +56,14 @@ button, input[type="button"], input[type="submit"], input[type="reset"] {
 
 img {
   object-fit: cover;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background: #000;
+  margin: 0;
+  padding: 0;
 }
 
 html.lenis {

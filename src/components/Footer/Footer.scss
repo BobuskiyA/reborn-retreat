@@ -1,0 +1,85 @@
+@import "../../styles/global.scss";
+
+.footer {
+  background-color: #f4d7dc;
+  padding: 2vw 6.5vw;
+  position: relative;
+
+  &-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__list-links {
+    margin-top: 1vw;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5vw;
+  }
+
+  &__right {
+    display: flex;
+    gap: 8vw;
+
+    @include mq() {
+      flex-direction: column;
+      
+    }
+  }
+
+  &__logo {
+    width: 15vw;
+
+    @include mq() {
+      width: 24vw;
+    }
+  }
+
+  &-text {
+    &-name {
+      font-weight: bold;
+      text-transform: uppercase;
+      border-bottom: 0.1vw solid $c-black;
+      max-width: min-content;
+      text-wrap: nowrap;
+    }
+  }
+
+  &__links {
+    display: flex;
+    margin-top: 1vw;
+    gap: 1vw;
+
+    @include mq() {
+      flex-direction: column;
+    }
+  }
+
+  &__link {
+    font: inherit;
+  }
+
+  &__socials {
+    display: flex;
+    margin-top: 1vw;
+    gap: 2vw;
+
+    @include mq() {
+      gap: 4vw;
+    }
+
+    & img {
+      width: 3vw;
+      transition: all 0.2s ease-in-out;
+
+      @include mq() {
+        width: 7vw;
+      }
+
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+}

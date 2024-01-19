@@ -2,27 +2,28 @@
 
 %h1 {
   font-family: Giselma, sans-serif;
-  font-size: 3vw;
+  font-size: 2.8vw;
   font-style: normal;
   font-weight: normal;
-  text-transform: uppercase;
   line-height: 142%;
+  text-transform: uppercase;
   letter-spacing: normal;
 
   @include mq() {
-    font-size: 5vw;
+    font-size: 6.5vw;
   }
 }
 
 .big-text {
   font-family: Giselma, sans-serif;
-  font-size: 11vw;
+  font-size: 4.7vw;
   font-style: normal;
   line-height: 90%;
+  text-transform: uppercase;
   letter-spacing: normal;
 
   @include mq() {
-    font-size: 16vw;
+    font-size: 11.8vw;
   }
 }
 
@@ -35,61 +36,27 @@
   letter-spacing: normal;
 
   @include mq() {
-    font-size: 4vw;
+    font-size: 6.4vw;
   }
 }
 
 %body-text {
-  font-family: Montserrat, sans-serif;
-  font-size: 1.5vw;
+  font-family: Inconsolata, sans-serif;
+  font-size: 1.1vw;
   font-style: normal;
   font-weight: 400;
-  line-height: 150%;
+  line-height: 140%;
   letter-spacing: 0.07vw;
 
   @include mq() {
-    font-size: 3vw;
+    font-size: 4vw;
   }
 }
 
 %link {
-  font-family: Chakra Petch, sans-serif;
-  font-size: 1.8vw;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 124.235%;
-  text-transform: uppercase;
-  letter-spacing: normal;
+  @extend %body-text;
+  font-weight: bold;
 
-  @include mq() {
-    font-size: 3vw;
-  }
-}
-
-.small-text {
-  font-family: Monstserrat, sans-serif;
-  font-size: 1.35vw;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 150.857%;
-  letter-spacing: 0.07vw;
-
-  @include mq() {
-    font-size: 3vw;
-  }
-}
-
-footer {
-  font-family: Consolas, sans-serif;
-  font-size: 1.35vw;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 185.856%;
-  letter-spacing: 0.07vw;
-
-  @include mq() {
-    font-size: 2.5vw;
-  }
 }
 
 .bold {
