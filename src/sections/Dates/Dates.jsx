@@ -37,19 +37,17 @@ export const Dates = () => {
       <h1>Packages and entrance dates</h1>
       <div className="dates__wrapper">
         <div className="calendar">
-          <motion.img
+          <img
             src="/images/star-orange.svg"
             alt="star"
             className="calendar__star"
-            initial={{ rotate: '0deg' }}
-            animate={{ rotate: selectedCard.isActive ? '10deg' : '0deg' }}
+            
           />
-          <motion.img
+          <img
             src="/images/doodles.svg"
             alt="star"
             className="calendar__doodles"
-            initial={{ rotate: '0deg' }}
-            animate={{ rotate: selectedCard.isActive ? '-15deg' : '0deg' }}
+           
           />
           <h1 className="calendar__mounth">April</h1>
           <ul class="calendar__weekdays">

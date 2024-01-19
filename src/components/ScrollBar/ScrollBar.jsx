@@ -19,8 +19,8 @@ export const ScrollBar = () => {
       });
 
       tl.to('.circle', {
-        bottom: '1%',
-        translateY: "-10%",
+        bottom: '-10%',
+        translateY: "-20%",
         ease: 'none',
       })
   }, [])

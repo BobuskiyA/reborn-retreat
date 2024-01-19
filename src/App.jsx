@@ -1,4 +1,9 @@
+import { useEffect, useState } from "react";
+import { AnimatePresence } from "framer-motion";
 import { BrowserView } from "react-device-detect";
+
+import "./styles/global.scss";
+
 import { Header } from "./components/Header/Header";
 import { ScrollBar } from "./components/ScrollBar/ScrollBar";
 import { Dates } from "./sections/Dates/Dates";
@@ -10,12 +15,9 @@ import { Reborn } from "./sections/Reborn/Reborn";
 import { Schedule } from "./sections/Schedule/Schedule";
 import { Video } from "./sections/Video/Video";
 import { Bring } from "./sections/Bring/Bring";
-import "./styles/global.scss";
 import { Rules } from "./sections/Rules/Rules";
 import { Questionnaire } from "./sections/Questionnaire/Questionnaire";
 import { Footer } from "./components/Footer/Footer";
-import { useEffect, useState } from "react";
-import { AnimatePresence } from "framer-motion";
 
 function App() {
   // const [loaderFinished, setLoaderFinished] = useState(false);

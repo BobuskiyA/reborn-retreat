@@ -39,6 +39,7 @@
         right: -20vw;
         top: 2vw;
         object-fit: cover;
+        @include rotation();
 
         @include mq() {
           top: 60vw;

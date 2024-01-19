@@ -6,33 +6,26 @@ export const calendarAnim = {
     },
     open: {
       opacity: 0.6,
-      filter: "blur(0.2vw)",
       transition: { duration: 0.35 },
     },
     closed: {
       opacity: 1,
-      filter: "blur(0)",
       transition: { duration: 0.35 },
     },
   },
   dates: {
     initial: {
       opacity: 1,
-      transform: "scale(1)",
       transition: { duration: 0.35 },
 
     },
     open: {
-      opacity: 0.6,
-      filter: "blur(0.5vw)",
-      transform: "scale(1.2)",
+      opacity: 0.4,
       transition: { duration: 0.35 },
 
     },
     closed: {
       opacity: 1,
-      transform: "scale(1)",
-      filter: "blur(0)",
       transition: { duration: 0.35 },
     },
   },
