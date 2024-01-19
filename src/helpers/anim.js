@@ -16,16 +16,19 @@ export const calendarAnim = {
   dates: {
     initial: {
       opacity: 1,
+      filter: 'blur(0)',
       transition: { duration: 0.35 },
 
     },
     open: {
       opacity: 0.4,
+      filter: 'blur(1vw)',
       transition: { duration: 0.35 },
 
     },
     closed: {
       opacity: 1,
+      filter: 'blur(0)',
       transition: { duration: 0.35 },
     },
   },
