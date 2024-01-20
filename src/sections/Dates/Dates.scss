@@ -143,7 +143,7 @@
           background: linear-gradient(90deg, $c-purple 40%, $c-orange 63%);
         }
       }
-      
+
       &:nth-of-type(22) {
         .type-2 {
           background: linear-gradient(90deg, $c-orange 40%, $c-blue 63%);
@@ -160,7 +160,7 @@
           top: 21%;
         }
       }
-      
+
       &--welcomed-2 {
         position: absolute;
         width: 15%;
@@ -265,7 +265,7 @@
 
       @include mq() {
         display: flex;
-        padding: 3vw 1vw;
+        padding: 3vw;
         border-radius: 2vw 2vw 0 0;
         font-size: 4vw;
         flex-wrap: nowrap;

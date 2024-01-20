@@ -6,7 +6,7 @@
   background-color: $c-white;
 
   @include mq() {
-    padding: 8vw 5vw;
+    padding: 15vw 5vw;
   }
 
   &__wrapper {
@@ -51,7 +51,6 @@
           @include mq() {
             margin-top: 14vw;
           }
-
         }
         &-3 {
           @include mq() {
@@ -124,8 +123,6 @@
           }
         }
       }
-
-      
     }
   }
 

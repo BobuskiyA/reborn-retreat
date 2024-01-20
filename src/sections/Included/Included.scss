@@ -1,7 +1,7 @@
 @import "/src/styles/global.scss";
 
 .included {
-  padding: 2vw 6.5vw 6vw;
+  padding: 2vw 6.5vw 20vw;
   border-bottom: 0.2vw solid $c-black;
 
   &__head {
@@ -11,7 +11,7 @@
     height: 6vw;
 
     @include mq() {
-      height: 24vw;
+      height: 30vw;
     }
 
     &-item {
@@ -22,16 +22,16 @@
       justify-content: space-evenly;
       border-radius: 0.6vw 0.6vw 0 0;
 
-      @include mq() { 
+      @include mq() {
         padding: 2.5vw;
         border-radius: 2vw 2vw 0 0;
       }
-    
+
       &--main {
         align-items: flex-start;
         padding-left: 2.5vw;
 
-        @include mq() { 
+        @include mq() {
           padding: 0 2.5vw;
 
           .included__head-title {
@@ -47,10 +47,11 @@
       text-transform: uppercase;
 
       @include mq() {
-        font-size: 3vw;
+        font-size: 5vw;
         line-height: normal;
         text-align: justify;
         transform: rotate(-90deg);
+        margin-bottom: 2vw;
       }
     }
 
@@ -75,12 +76,13 @@
     &-item {
       display: flex;
       align-items: center;
-      justify-content: center;  
+      justify-content: center;
       background-color: $c-pink-secondary;
       width: 100%;
       height: 100%;
       text-align: center;
       padding: 1vw 0;
+      align-content: flex-start;
     }
 
     &-text {
@@ -88,11 +90,12 @@
       text-align: left !important;
       width: 82% !important;
       justify-content: flex-start;
+      flex-direction: column;
+      flex-wrap: wrap;
     }
 
     &:nth-of-type(2n) {
-      
-      background-color: $c-pink-dark-seconary;  
+      background-color: $c-pink-dark-seconary;
       .included__content-item {
         background-color: $c-pink-dark;
       }

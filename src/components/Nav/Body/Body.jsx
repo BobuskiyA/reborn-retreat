@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 import { Menu } from "@/helpers/anim";
 import "./Body.scss";
-import linksList from "@/data/links.json"
+import linksList from "@/data/links.json";
 import AnchorLink from "@/components/AnchorLink/AnchorLink";
 import { Button } from "@/components/Button/Button";
 
@@ -36,7 +36,11 @@ export const Body = ({ isActive, setIsActive }) => {
               {curLink.name}
             </AnchorLink>
           ))}
-          <Button title="Contact Us" to="/" customClass="nav__button" />
+          <Button
+            title="Contact Us"
+            to="https://t.me/ate_matos"
+            customClass="nav__button"
+          />
         </motion.div>
       </div>
     </motion.div>
