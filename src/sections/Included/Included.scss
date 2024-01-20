@@ -81,6 +81,10 @@
       height: 100%;
       text-align: center;
       padding: 1vw 0;
+
+      @include mq() {
+        text-wrap: balance;
+      }
     }
 
     &-text {
@@ -95,6 +99,15 @@
       background-color: $c-pink-dark-seconary;  
       .included__content-item {
         background-color: $c-pink-dark;
+      }
+    }
+
+    &:nth-of-type(7) {
+      .included__content-item {   
+        @include mq() {
+          padding: 0 !important;
+          width: 120% !important;
+        }
       }
     }
   }
