@@ -6,8 +6,8 @@ import { Button } from "@/components/Button/Button";
 
 export const Included = () => {
   const handleImage = (isIncluded) => {
-    return `/images/${isIncluded ? 'check' : 'cross'}.svg`
-  }
+    return `/images/${isIncluded ? "check" : "cross"}.svg`;
+  };
 
   return (
     <section className="included">
@@ -16,9 +16,7 @@ export const Included = () => {
           className="included__head-item included__head-item--main"
           style={{ backgroundColor: "#F9F5EF" }}
         >
-          <p className="included__head-title">
-            What's included
-          </p>
+          <p className="included__head-title">What's included</p>
         </th>
         <th
           className="included__head-item"
@@ -69,9 +67,7 @@ export const Included = () => {
         </div>
       ))}
       <footer className="included__footer">
-        <h2>
-          Contact us and let's start this amazing journey together
-        </h2>
+        <h2>Contact us and let's start this amazing journey together</h2>
         <Button
           customClass="included__footer-button"
           to="https://t.me/ate_matos"
