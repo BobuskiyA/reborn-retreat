@@ -14,6 +14,7 @@ export const Questionnaire = () => {
             health questionnaire for better personal approach taking into
             account the health state of each individual.
           </p>
+          <img src="/images/q-1.svg" alt="q-1" className="questionnaire-decor"/>
           <Button
             title="Start"
             to="https://docs.google.com/forms/d/e/1FAIpQLScIjSxq8P4mEk7eaj1wgaLzxexpAmb0rkUaKkDt3rn9YlDFwQ/viewform?usp=sf_link"
@@ -27,6 +28,7 @@ export const Questionnaire = () => {
             else interested to question and honestly answer the Laughter
             Questionnaire for self laughter awareness check.
           </p>
+          <img src="/images/q-2.svg" alt="q-2" className="questionnaire-decor"/>
           <Button
             title="Start"
             to="https://docs.google.com/forms/d/e/1FAIpQLScFtZ0sXO_XGOI6eDYmn9XIY68oBft2kS_Gm2q6Uln4_BWY_w/viewform?usp=sf_link"

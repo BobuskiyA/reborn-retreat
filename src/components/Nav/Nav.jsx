@@ -1,10 +1,24 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { MenuButton } from './MenuButton/MenuButton';
 import { AnimatePresence } from 'framer-motion';
 import { Body } from './Body/Body';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/all';
 
 export const Nav = () => {
   const [isActive, setIsActive] = useState(false);
+
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+    gsap
+      .timeline({
+        scrollTrigger: {
+          trigger: '.hero',
+          start: 'top top',
+          onEnter:() => setIsActive(false),
+        }
+      })
+  }, [])
 
   return (
     <>

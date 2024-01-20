@@ -8,6 +8,19 @@
 
     @include mq() {
       flex-direction: column;
+      padding: 20vw 6.5vw;
+    }
+  }
+
+  &-decor {
+    position: absolute;
+    right: 8%;
+    bottom: 7%;
+
+    @include mq() {
+      top: 7%;
+      width: 10vw;
+      left: 43%;
     }
   }
 
@@ -15,6 +28,11 @@
     flex: 1;
     padding: 30px;
     border-radius: 8px;
+    position: relative;
+
+    @include mq() {
+      padding: 28vw 5vw 14vw;
+    }
 
     &.health {
       background-color: $c-orange;
@@ -32,10 +50,11 @@
   &__button {
     width: 15.5vw;
     height: 3.8vw;
+    margin-top: 2vw;
 
     @include mq() {
       width: 100%;
-      height: 10vw;
+      height: 15vw;
     }
 
     &.health {

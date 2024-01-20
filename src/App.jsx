@@ -23,9 +23,9 @@ function App() {
   // const [loaderFinished, setLoaderFinished] = useState(false);
   // const [isShowPage, setIsShowPage] = useState(true);
 
-  // useEffect(() => {
-  //   window.scrollTo(0, 0)
-  // }, [])
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
 
   return (
     <>

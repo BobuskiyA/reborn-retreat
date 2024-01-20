@@ -5,10 +5,19 @@
   padding: 2vw 6.5vw;
   position: relative;
 
+  @include mq() {
+    padding: 26vw 6.5vw
+  }
+
   &-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @include mq() {
+      flex-direction: column;
+      gap: 10vw;
+    }
   }
 
   &__list-links {
@@ -16,6 +25,12 @@
     display: flex;
     flex-direction: column;
     gap: 0.5vw;
+
+    @include mq() {
+      gap: 7.5vw;
+      align-items: center;
+      margin-top: 7.5vw;
+    }
   }
 
   &__right {
@@ -23,8 +38,9 @@
     gap: 8vw;
 
     @include mq() {
+      align-items: center;
       flex-direction: column;
-      
+      gap: 14vw;
     }
   }
 
@@ -32,7 +48,7 @@
     width: 15vw;
 
     @include mq() {
-      width: 24vw;
+      width: 53vw;
     }
   }
 
@@ -44,6 +60,21 @@
       max-width: min-content;
       text-wrap: nowrap;
     }
+
+    &__contact {
+      @include mq() {
+        text-align: center;
+        margin-bottom: 4vw;
+      }
+    }
+  }
+
+  &-nav {
+      @include mq() {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
   }
 
   &__links {
@@ -66,7 +97,7 @@
     gap: 2vw;
 
     @include mq() {
-      gap: 4vw;
+      gap: 7vw;
     }
 
     & img {
@@ -74,7 +105,7 @@
       transition: all 0.2s ease-in-out;
 
       @include mq() {
-        width: 7vw;
+        width: 16vw;
       }
 
       &:hover {

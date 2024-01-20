@@ -16,7 +16,7 @@ export const Discover = () => {
             <img
               src={currD.image}
               alt={`discover-${index}`}
-              className="discover__image"
+              className={`discover__image discover__image-${index}`}
             />
             <p>
               {currD.text}

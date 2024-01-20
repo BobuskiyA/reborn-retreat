@@ -6,7 +6,7 @@
   background-color: $c-white;
 
   @include mq() {
-    padding: 15vw 5vw;
+    padding: 20vw 6.5vw;
   }
 
   &__wrapper {
@@ -42,6 +42,12 @@
         &-2 {
           @include mq() {
             margin-top: 7vw;
+          }
+        }
+
+        &-3 {
+          @include mq() {
+            margin-top: 17vw;
           }
         }
       }
@@ -95,11 +101,11 @@
 
         @include mq() {
           transform: rotate(90deg);
-          height: 47.1vw;
-          width: 49.5vw;
-          object-fit: none;
+          height: 49.1vw;
+          width: 60.5vw;
           position: absolute;
           top: -19vw;
+          left: -7vw;
         }
       }
 
@@ -107,9 +113,8 @@
         &-2 {
           @include mq() {
             transform: rotate(90deg);
-            object-fit: none;
-            width: 23px;
-            height: 132px;
+            width: 8.5vw;
+            height: 44vw;
             position: absolute;
             left: 17vw;
             top: -19vw;
@@ -118,8 +123,10 @@
 
         &-3 {
           @include mq() {
-            width: 27%;
-            margin-left: -6vw;
+            position: absolute;
+            width: 14%;
+            height: 26vw;
+            top: -5vw;
           }
         }
       }
