@@ -8,7 +8,7 @@
   overflow: hidden;
 
   @include mq() {
-    padding: 8vw;
+    padding: 20vw 6.5vw;
   }
 
   &__list {

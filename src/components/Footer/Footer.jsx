@@ -53,7 +53,7 @@ export const Footer = () => {
             </ul>
           </div>
           <div className="footer-contacts">
-            <div className="footer-text contact">Get in touch:</div>
+            <div className="footer-text__contact">Get in touch:</div>
             <ul className="footer__socials">
               {socials.map((targetSocial, index) => (
                 <li key={index}>

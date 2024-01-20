@@ -8,6 +8,10 @@
   flex-direction: column;
   align-items: center;
 
+  @include mq() {
+    padding: 20vw 6.5vw;
+  }
+
   &__list {
     display: flex;
     flex-wrap: wrap;
@@ -27,8 +31,15 @@
     background-size: contain;
 
     @include mq() {
-      width: 47%;
-      height: 43vw;
+      width: 63vw;
+      height: 63vw;
+    }
+
+    &:nth-of-type(2),
+    &:nth-of-type(8) {
+      .rules__item-description {
+        padding: 0;
+      }
     }
 
     &:last-of-type {
@@ -38,6 +49,19 @@
 
         & > h1 {
           line-height: 80%;
+        }
+      }
+    }
+
+    &-description {
+      @include mq() {
+        padding: 0 5vw;
+      }
+
+      &:nth-of-type(2),
+      &:nth-of-type(8) {
+        @include mq() {
+          padding: 0 5px;
         }
       }
     }
@@ -58,13 +82,6 @@
     height: 100%;
 
     padding: 0 3vw;
-
-    p {
-      @include mq() {
-        padding: 10px;
-        font-size: 8px;
-      }
-    }
   }
 
   &-description {

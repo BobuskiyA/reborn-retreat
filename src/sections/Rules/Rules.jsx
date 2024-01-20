@@ -15,7 +15,7 @@ export const Rules = () => {
             <li key={`rules-${index}`} className="rules__item" style={{ backgroundImage: `url(${currD.image})` }}>
               <div className="rules-content">
                 <h1>{currD.title}</h1>
-                <p>{currD.description}</p>
+                <p className="rules__item-description">{currD.description}</p>
               </div>
             </li>
           ))}
