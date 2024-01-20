@@ -153,7 +153,9 @@ export const Dates = () => {
                     className="packages__line"
                   />
                   <p>Entrance dates:</p>
-                  <p className="packages__entrance">{d.entrance}</p>
+                  <p className="packages__entrance">
+                    {d.entrance}
+                  </p>
                   <p className="packages__welcomed">
                     (is welcomed the {d.welcomed})
                   </p>

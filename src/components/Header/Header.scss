@@ -11,9 +11,9 @@
   padding: 0 6.5vw;
 
   @include mq() {
-    height: 18vw;
+    height: 18.5vw;
     justify-content: space-between;
-    padding: 0 10vw;
+    padding: 0 6.3vw;
   }
 
   &__wrapper {
@@ -34,8 +34,8 @@
     z-index: 100;
 
     @include mq() {
-      width: 13vw;
-      height: 13vw;
+      width: 14.7vw;
+      height: 13.5vw;
     }
   }
 

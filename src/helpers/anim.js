@@ -42,7 +42,7 @@ export const Menu = {
       right: 0,
     },
     enter: {
-      height: "100lvh",
+      height: "76.9lvh",
       transition: {
         duration: 1.5,
         ease: [0.76, 0, 0.24, 1],
@@ -52,10 +52,26 @@ export const Menu = {
       height: 0,
       transition: {
         duration: 1,
+        delay: .2,
         ease: [0.76, 0, 0.24, 1],
       },
     },
   },
+  menuContainer: {
+    initial: {
+      opacity: 0,
+    },
+    enter: {
+      opacity: 1,
+      transition: {
+        duration: .5,
+        delay: 1,
+      },
+    },
+    exit: {
+      opacity: 0,
+    }
+  }
 };
 
 export const scrollBarAnim = {

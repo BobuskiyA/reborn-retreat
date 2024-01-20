@@ -17,7 +17,13 @@ export const Body = ({ isActive, setIsActive }) => {
       exit="exit"
     >
       <div className="nav__content">
-        <div className="container">
+        <motion.div
+          className="container"
+          variants={Menu.menuContainer}
+          initial="initial"
+          animate="enter"
+          exit="exit"
+        >
           {linksList.map((curLink, index) => (
             <AnchorLink
               key={`navLink_${index}`}
@@ -31,7 +37,7 @@ export const Body = ({ isActive, setIsActive }) => {
             </AnchorLink>
           ))}
           <Button title="Contact Us" to="/" customClass="nav__button" />
-        </div>
+        </motion.div>
       </div>
     </motion.div>
   );

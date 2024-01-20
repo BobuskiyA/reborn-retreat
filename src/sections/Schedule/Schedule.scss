@@ -33,13 +33,14 @@
     }
 
     @include mq() {
-      flex-direction: column !important;
+      flex-direction: column-reverse !important;
     }
   }
 
   &__text {
     width: 52%;
     @include mq() {
+      margin-top: 8.3vw;
       width: 100%;
     }
 
@@ -68,8 +69,8 @@
 
     @include mq() {
       width: 58vw;
-      top: 26%;
-      right: 2%;
+      top: 4%;
+      right: -17%;
     }
   }
 
@@ -81,8 +82,8 @@
     z-index: 0;
 
     @include mq() {
-      width: 75%;
-      top: 55%;
+      width: 81%;
+      top: 44.6%;
     }
   }
 
@@ -94,7 +95,9 @@
     width: 5vw;
 
     @include mq() {
-      display: none;
+      bottom: 31%;
+      right: 6%;
+      width: 15vw;
     }
   }
 }

@@ -15,9 +15,9 @@ export const Preparation = () => {
               <img
                 src={currPrerp.image}
                 alt={`step-${index}`}
-                className="preparation__list-image"
+                className={`preparation__list-image preparation__list-image-1list-${index + 1}`}
               />
-              <p className="preparation__list-text">{currPrerp.text}</p>
+              <p className={`preparation__list-text preparation__list-text-1list-${index + 1}`}>{currPrerp.text}</p>
               {currPrerp.link && (
                 <div dangerouslySetInnerHTML={{ __html: currPrerp.link }} />
               )}
@@ -36,7 +36,7 @@ export const Preparation = () => {
               {!currPrerp.link ? (
                 <p className="preparation__list-text">{currPrerp.text}</p>
               ) : (
-                <div dangerouslySetInnerHTML={{ __html: currPrerp.text }} />
+                <div className={`preparation__list-text preparation__list-text-2list-${index + 1}`} dangerouslySetInnerHTML={{ __html: currPrerp.text }} />
               )}
             </li>
           ))}

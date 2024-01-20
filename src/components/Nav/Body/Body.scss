@@ -16,6 +16,7 @@
     justify-content: space-between;
 
     @include mq() {
+      height: 95%;
       justify-content: center;
     }
   }
@@ -28,21 +29,22 @@
     @include mq() {
       align-items: center;
       justify-content: center;
-      width: 80vw;
-      height: max(100svh, 660px);
       text-align: center;
       z-index: 10;
+      gap: 8vw;
+      margin-top: 10vw;
     }
   }
   &__link {
     transition: all 0.5s ease;
-    padding: 2vw 0;
-    font-size: 8vw;
+    font-size: 6.3vw;
+    font-weight: normal;
   }
 
   &__button {
     background-color: $c-orange;
-    width: 60%;
-    height: 10vw;
+    width: 71.2%;
+    height: 15vw;
+    margin-top: 7vw;
   }
 }

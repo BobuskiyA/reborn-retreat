@@ -10,7 +10,7 @@
   align-items: center;
 
   @include mq() {
-    padding: 8vw 4vw;
+    padding: 20vw 6.5vw;
   }
 
   &-container {
@@ -25,7 +25,8 @@
       z-index: 0;
 
       @include mq() {
-        top: 10vw;
+        top: 32vw;
+        width: 42vw;
       }
     }
   }
@@ -34,6 +35,10 @@
     margin-bottom: 3.2vw;
     position: relative;
     z-index: 1;
+
+    @include mq() {
+      margin-bottom: 11vw;
+    }
   }
   &-content {
     video {

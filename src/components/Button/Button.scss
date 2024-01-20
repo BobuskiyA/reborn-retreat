@@ -17,6 +17,11 @@
   @extend %body-text;
   cursor: pointer;
 
+  @include mq() {
+    border-radius: 11vw;
+    font-size: 6vw;
+  }
+
   &__circle {
     width: 20%;
     height: 150%;

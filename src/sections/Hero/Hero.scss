@@ -5,7 +5,7 @@
   height: max(53vw, 370px);
 
   @include mq() {
-    height: 90lvh;
+    height: auto;
   }
 
   &__wrapper {
@@ -18,7 +18,12 @@
     transform: translateY(-50%);
 
     @include mq() {
-      top: 65%;
+      position: static;
+      transform: none;
+      flex-direction: column;
+      align-items: center;
+      margin: 6.5vw 6.5vw 19.5vw;
+      gap: 10vw;
     }
   }
 
@@ -29,6 +34,7 @@
 
     @include mq() {
       gap: 1vw;
+      width: 100%;
     }
 
     .char-mask {
@@ -49,6 +55,22 @@
 
   &__subtitle {
     text-transform: none;
+
+    @include mq() {
+      font-size: 9.5vw;
+    }
+
+    & > br {
+      @include mq() {
+        display: none;
+      }
+    }
+
+    & > span {
+      @include mq($tablet + 1, ">") {
+        display: none;
+      }
+    }
   }
 
   &__image {
@@ -58,11 +80,11 @@
       overflow: hidden;
 
       @include mq() {
-        width: 96vw;
-        height: 60vw;
-        position: absolute;
+        width: 100%;
+        height: 62.2vw;
+        position: static;
         z-index: -1;
-        top: -120%;
+        top: -147%;
       }
     }
 
@@ -78,8 +100,9 @@
     background-color: $c-blue;
 
     @include mq() {
-      width: 40vw;
-      height: 12vw;
+      margin-top: 6vw;
+      width: 71.2%;
+      height: 15vw;
     }
   }
 
@@ -89,7 +112,6 @@
     background-color: $c-green;
 
     @include mq() {
-      width: 96%;
       height: 1.5vw;
     }
   }
@@ -117,9 +139,9 @@
       transform: translate(-50%, -50%);
 
       @include mq() {
-        width: 42vw;
-        bottom: -39vw;
-        right: -14vw;
+        width: 23vw;
+        bottom: -7vw;
+        left: 83vw;
         z-index: -1;
       }
     }

@@ -19,11 +19,12 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 4vw 12vw;
     margin-top: 2vw;
-
+    
     @include mq() {
       display: flex;
       flex-wrap: wrap;
       gap: 6vw;
+      margin-top: 10vw;
     }
   }
 
