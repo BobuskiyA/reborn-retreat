@@ -59,6 +59,7 @@
       text-transform: uppercase;
       border-bottom: 0.1vw solid $c-black;
       text-wrap: nowrap;
+      max-width: fit-content;
     }
 
     &__contact {
