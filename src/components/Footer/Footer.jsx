@@ -17,7 +17,7 @@ const socials = [
   },
   {
     icon: instagramIcon,
-    link: "https://www.instagram.com/lmdlmpm?igsh=MWpmM2dmOHlzcmNrOA==",
+    link: "https://www.instagram.com/at.yoga.process?igsh=MW9mbnJ2eXV4ZTFqMQ==",
   },
   {
     icon: whatsappIcon,
