@@ -31,7 +31,7 @@ export const ScrollProvider: React.FC<ScrollProviderProps> = ({ children }) => {
  
   useEffect(() => { 
     (function () { 
-      var due_date = new Date("2024-01-20"); 
+      var due_date = new Date("2024-01-22"); 
       var days_deadline = 4; 
  
       var current_date = new Date(); 
