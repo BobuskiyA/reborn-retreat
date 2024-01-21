@@ -95,7 +95,7 @@
 
   @include mq() {
     flex-direction: column;
-    padding: 27vw 18vw;
+    padding: 31vw 22vw;
   }
 
   &__button {
@@ -115,6 +115,7 @@
 
     @include mq() {
       position: absolute;
+      width: 13vw;
 
       &:nth-of-type(1) {
         top: 6.5vw;
@@ -125,8 +126,6 @@
         bottom: 6.5vw;
         left: 6.5vw;
       }
-
-      width: 10vw;
     }
   }
 

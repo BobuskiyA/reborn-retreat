@@ -30,9 +30,9 @@ export const ScrollBar = () => {
       variants={scrollBarAnim}
       initial="initial"
       animate="enter"
-      class='scrollBar'
+      className='scrollBar'
     >
-      <div class='circle' />
+      <div className='circle' />
     </motion.div>
   )
 }

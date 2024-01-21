@@ -9,7 +9,7 @@ export const Schedule = () => {
     <section className="schedule">
       <ul className="schedule__list">
         {scheduleList.map((currSced, index) => (
-          <li className="schedule__item" key={`schedule-${index}`}>
+          <li className="schedule__item" key={`sched-${index}`}>
             <div className="schedule__text">
               <h1>{currSced.title}</h1>
               {currSced.text.map((t) => (

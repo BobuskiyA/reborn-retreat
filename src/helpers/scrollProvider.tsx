@@ -31,8 +31,8 @@ export const ScrollProvider: React.FC<ScrollProviderProps> = ({ children }) => {
  
   useEffect(() => { 
     (function () { 
-      var due_date = new Date("2024-01-22"); 
-      var days_deadline = 4; 
+      var due_date = new Date("2024-01-23"); 
+      var days_deadline = 3; 
  
       var current_date = new Date(); 
       var utc1 = Date.UTC( 
@@ -70,12 +70,12 @@ export const ScrollProvider: React.FC<ScrollProviderProps> = ({ children }) => {
           duration: 0.7, 
           lerp: 0.1, 
           smoothWheel: true, 
-          wheelMultiplier: 2, 
+          wheelMultiplier: 2,
         }, 
       }); 
     })(); 
   }, []); 
- 
+
   return ( 
     <ScrollContext.Provider value={scrollTo}>{children}</ScrollContext.Provider> 
   ); 

@@ -13,11 +13,12 @@ export const Video = () => {
         <div className="video-wrapper">
           <ReactPlayer
             className="video-content"
-            width="77.64vw"
-            height="43.06vw"
+            width="100%"
+            height="100%"
             controls
             url={videoFileName}
           />
+          {/* <iframe width="100%" height="100%" src="https://www.youtube.com/embed/WpUubyLKrIQ?si=WNj3BxwijOwxGPQJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> */}
         </div>
       </div>
     </div>

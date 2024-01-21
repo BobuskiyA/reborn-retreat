@@ -50,7 +50,7 @@ export const Dates = () => {
            
           />
           <h1 className="calendar__mounth">April</h1>
-          <ul class="calendar__weekdays">
+          <ul className="calendar__weekdays">
             <li>S</li>
             <li>M</li>
             <li>T</li>
@@ -59,12 +59,12 @@ export const Dates = () => {
             <li>F</li>
             <li>S</li>
           </ul>
-          <ul class="calendar__days">
+          <ul className="calendar__days">
             <li></li>
             {numbers.slice(0, 10).map((currNum) => (
               <motion.li
                 key={currNum}
-                class="calendar__day"
+                className="calendar__day"
                 variants={calendarAnim.dates}
                 animate={handleAnim(1)}
                 onMouseOver={() => handleSelected(true, 1)}
@@ -76,7 +76,7 @@ export const Dates = () => {
               </motion.li>
             ))}
               <motion.li
-                class="calendar__day calendar__day--welcomed"
+                className="calendar__day calendar__day--welcomed"
                 variants={calendarAnim.dates}
                 animate={handleAnim(2)}
                 onMouseOver={() => handleSelected(true, 1)}
@@ -89,7 +89,7 @@ export const Dates = () => {
             {numbers.slice(10, 20).map((currNum) => (
               <motion.li
                 key={currNum}
-                class="calendar__day"
+                className="calendar__day"
                 variants={calendarAnim.dates}
                 animate={handleAnim(2)}
                 onMouseOver={() => handleSelected(true, 2)}
@@ -102,7 +102,7 @@ export const Dates = () => {
               </motion.li>
             ))}
             <motion.li
-                class="calendar__day calendar__day--welcomed-2"
+                className="calendar__day calendar__day--welcomed-2"
                 variants={calendarAnim.dates}
                 animate={handleAnim(3)}
                 onMouseOver={() => handleSelected(true, 1)}
@@ -115,7 +115,7 @@ export const Dates = () => {
             {numbers.slice(20, 30).map((currNum) => (
               <motion.li
                 key={currNum}
-                class="calendar__day"
+                className="calendar__day"
                 variants={calendarAnim.dates}
                 animate={handleAnim(3)}
                 onMouseOver={() => handleSelected(true, 3)}

@@ -1,7 +1,7 @@
 @import "/src/styles/global.scss";
 
 .included {
-  padding: 2vw 6.5vw 20vw;
+  padding: 4vw 6.5vw;
   border-bottom: 0.2vw solid $c-black;
 
   &__head {
@@ -83,15 +83,18 @@
       text-align: center;
       padding: 1vw 0;
       align-content: flex-start;
+
       @include mq() {
-        text-wrap: balance;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        hyphens: auto;
       }
     }
 
     &-text {
-      padding: 1vw 2.5vw !important;
+      padding: 1vw 0 1vw 1.5vw !important;
       text-align: left !important;
-      width: 82% !important;
+      width: 97% !important;
       justify-content: flex-start;
       flex-direction: column;
       flex-wrap: wrap;

@@ -42,7 +42,7 @@ export const Menu = {
       right: 0,
     },
     enter: {
-      height: "76.9lvh",
+      height: "max(75lvh, 507px)",
       transition: {
         duration: 1.5,
         ease: [0.76, 0, 0.24, 1],

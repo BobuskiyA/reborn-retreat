@@ -13,8 +13,8 @@ export const Nav = () => {
     gsap
       .timeline({
         scrollTrigger: {
-          trigger: '.hero',
-          start: 'top top',
+          trigger: '.header',
+          start: 'bottom top',
           onEnter:() => setIsActive(false),
         }
       })

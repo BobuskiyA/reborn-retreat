@@ -3,7 +3,7 @@
 .questionnaire {
   &-container {
     display: flex;
-    padding: 6.5vw;
+    padding: 4vw 6.5vw;
     gap: 2vw;
 
     @include mq() {
@@ -54,8 +54,9 @@
     margin-top: 2vw;
 
     @include mq() {
-      width: 100%;
+      width: 80%;
       height: 15vw;
+      margin: auto;
     }
 
     &.health {

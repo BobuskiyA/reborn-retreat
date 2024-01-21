@@ -19,6 +19,11 @@
     align-items: center;
     gap: 1vw;
     margin: 3vw 0;
+
+    @include mq() {
+      margin: 11vw 0;
+      gap: 5vw;
+    };
   }
 
   &__item {
