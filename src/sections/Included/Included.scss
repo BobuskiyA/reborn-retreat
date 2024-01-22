@@ -87,12 +87,12 @@
       @include mq() {
         word-wrap: break-word;
         overflow-wrap: break-word;
-        hyphens: auto;
+        hyphens: auto !important;
       }
     }
 
     &-text {
-      padding: 1vw 0 1vw 1.5vw !important;
+      padding: 1vw 0 1vw 1vw !important;
       text-align: left !important;
       width: 97% !important;
       justify-content: flex-start;

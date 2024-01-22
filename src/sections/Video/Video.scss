@@ -26,7 +26,7 @@
       z-index: 0;
 
       @include mq() {
-        top: 37vw;
+        top: 46vw;
         width: 42vw;
       }
     }
@@ -54,8 +54,6 @@
     display: flex;
     justify-content: center;
     height: 50vw;
-
-    
   }
 
   .play-button-container {
